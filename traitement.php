@@ -36,7 +36,7 @@ try {
     $mail->Port       = 465;
 
     $mail->setFrom('contact@webprime.fr', 'MD-VTC');
-    $mail->addAddress('asc.driver@outlook.com');
+    $mail->addAddress('mdvtc@orange.fr');
     $mail->addAddress('webprime91@hotmail.com');
 
     $mail->CharSet = 'UTF-8'; 
