@@ -39,7 +39,7 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
 .camry-index img{width:75%;height:30%;margin-bottom:5%}
 .camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
 .ville-lumiere{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
-.ville-lumiere img{width:40%;height:auto}
+.ville-lumiere img{width:40%;height:auto;border-radius: 20px}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
 .nos-vehicules-pc{display:flex;justify-content:center}
 .nos-vehicules-pc img{width:100%;margin-top:-10%;margin-bottom:-15%}
@@ -86,7 +86,7 @@ ion-icon{font-size:70px;color: #fff;}
   .camry-index img{width:100%;height:auto}
   .camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
   .ville-lumiere-mob{display:flex;justify-content:center;align-items:center;flex-direction:column;margin-top:5%;margin-bottom:5%}
-  .ville-lumiere-mob img{width:80%;height:auto;margin-top:3%;margin-bottom:3%}
+  .ville-lumiere-mob img{width:80%;height:auto;margin-top:3%;margin-bottom:3%;border-radius: 20px;}
   .presta1-mob{display:block}
   .presta1-mob img{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
   .avantages-taxi-mob{display:block}
