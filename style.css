@@ -41,8 +41,8 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
 .ville-lumiere{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
 .ville-lumiere img{width:40%;height:auto;border-radius: 20px}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
-.nos-vehicules-pc{display:flex;justify-content:center}
-.nos-vehicules-pc img{width:100%;margin-top:-10%;margin-bottom:-15%}
+.nos-vehicules-pc{display:flex;justify-content:center;width: 40%;margin-left: auto;margin-right: auto;}
+.nos-vehicules-pc img{width:100%;margin-top:0%;margin-bottom:5%;border-radius: 20px;}
 .icon-atouts{display:flex;justify-content:space-around;width:100%}
 .icon-item{text-align:center;margin-top:1%}
 ion-icon{font-size:70px;color: #fff;}
@@ -90,9 +90,8 @@ ion-icon{font-size:70px;color: #fff;}
   .presta1-mob{display:block}
   .presta1-mob img{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
   .avantages-taxi-mob{display:block}
-  .nos-vehicules img,.nos-vehicules-mob{margin-bottom:-13%}
-  .nos-vehicules{display:flex;justify-content:center}
-  .nos-vehicules img{width:100%;margin-top:-25%}
+  .nos-vehicules{display:flex;justify-content:center;width: 80%;margin-left: auto;margin-right: auto;}
+  .nos-vehicules img{width:100%;border-radius: 20px;}
   .contact{padding-top:4%;margin-top:15%}
   .contact h4{margin-bottom:5%}
   .contact p{margin:0 0 3%;color:#fff}
