@@ -188,26 +188,25 @@
     <a class="bouton-devis3" href="tel:+33647851015" title="tarif mise à disposition vtc">CONTACTEZ - NOUS</a>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-vtc">
-        <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
             <img src="classe-e-berline.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
-            Heures additionnelles : <strong>80 €</strong>
-        </p>
-        <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            Heures additionnelles : <strong>80 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
             <img src="mercedes-classe-s.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
-            Heures additionnelles : <strong>120 €</strong>
-        </p>
-        <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+            Heures additionnelles : <strong>120 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
             <img src="van.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
-            Heures additionnelles : <strong>90 €</strong>
-        </p>
-        <p>Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires
-            des vols pour ajuster nos services en cas de retard ou d'avance.
+            Heures additionnelles : <strong>90 €</strong> </p>
+        </div>
+            <p>Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires des vols pour ajuster nos services en cas de retard ou d'avance.
         </p>
     </div>
     <a class="bouton-devis3" href="tel:+33647851015" title="prix taxi cdg paris">CONTACTEZ - NOUS</a>
@@ -258,8 +257,33 @@
             });
         });
     </script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+            function observeStep(entry, observer) {
+                entry.target.classList.add('slide-in-done');
+                observer.unobserve(entry.target);
+            }
+            function createObserver(element) {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            observeStep(entry, observer);
+                        }
+                    });
+                }, observerOptions);
+                observer.observe(element);
+            }
+            var elements = document.querySelectorAll('.slide');
+            elements.forEach(function (element) {
+                createObserver(element);
+            });
+        });
+    </script>
 </body>
 
 </html>

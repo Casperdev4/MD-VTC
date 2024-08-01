@@ -174,24 +174,27 @@
     </div>
     <h2>NAVETTE AEROPORT PRIX</h2>
     <div class="p-vtc">
-        <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
             <img src="classe-e-berline.webp" alt="">
             Paris - Paris : <strong>80 €</strong> <br>
             Paris - Aéroport (CDG - ORY - LBG) : <strong>130 €</strong> <br>
             Orly - CDG : <strong>150 €</strong> <br>
             Paris - Disneyland Paris : <strong>150 €</strong></p>
-            <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
             <img src="mercedes-classe-s.webp" alt="">
             Paris - Paris : <strong>120 €</strong> <br>
             Paris - Aéroport (CDG - ORY - LBG) : <strong>170 €</strong> <br>
             Orly - CDG : <strong>190 €</strong> <br>
             Paris - Disneyland Paris : <strong>190 €</strong></p>
-            <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
             <img src="van.webp" alt="">
             Paris - Paris : <strong>100 €</strong> <br>
             Paris - Aéroport (CDG - ORY - LBG) : <strong>150 €</strong> <br>
             Orly - CDG : <strong>170 €</strong> <br>
             Paris - Disneyland Paris : <strong>170 €</strong></p>
+        </div>
             <a class="bouton-devis3" href="tel:+33647851015" title="reserver uber taxi">CONTACTEZ - NOUS</a>
            <p>- Les tarifs incluent l’assurance des voyageurs transportés. <br>
             - Aucun frais de bagage supplémentaire. <br>
@@ -206,27 +209,30 @@
     </div>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-vtc">
-        <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
             <img src="classe-e-berline.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
             Heures additionnelles : <strong>80 €</strong> </p>
-            <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
             <img src="mercedes-classe-s.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
             Heures additionnelles : <strong>120 €</strong> </p>
-            <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
             <img src="van.webp" alt="">
             Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
             Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
             Heures additionnelles : <strong>90 €</strong> </p>
+        </div>
             <p>Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires des vols pour ajuster nos services en cas de retard ou d'avance.
         </p>
     </div>
     <a class="bouton-devis3" href="tel:+33647851015" title="prix taxi cdg paris">CONTACTEZ - NOUS</a>
     <h2>COMMENT RESERVER UN CHAUFFEUR ?</h2>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p>Avec <strong>MD VTC</strong>, la réservation de votre chauffeur est <strong>simple et
                 rapide</strong>. À l'aide du formulaire de contact, il vous suffit de sélectionner votre lieu de prise
             en
@@ -264,6 +270,7 @@
             également facturée. Profitez d’une tarification claire et sans surprises avec MD VTC pour voyager en toute
             sérénité.</p>
     </div>
+    <a class="bouton-devis3" href="tel:+33647851015" title="prix taxi cdg paris">CONTACTEZ - NOUS</a>
     <div id="contact">
         <h5>NOS RÉSEAUX SOCIAUX</h5>
         <div class="reseau-contact">
@@ -330,6 +337,33 @@
                 observer.observe(element);
             });
         });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5
+                };
+                function observeStep(entry, observer) {
+                    entry.target.classList.add('slide-in-done');
+                    observer.unobserve(entry.target);
+                }
+                function createObserver(element) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                observeStep(entry, observer);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(element);
+                }
+                var elements = document.querySelectorAll('.slide');
+                elements.forEach(function (element) {
+                    createObserver(element);
+                });
+            });
     </script>
 </body>
 
