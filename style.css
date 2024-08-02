@@ -23,20 +23,53 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
 .drop-item a,.nav-item a,.show{color:#fff;text-decoration:none;font-size:1.2rem;line-height:3;margin-left:-2%;font-weight:600}
 .drop-item a{margin-left:-4%;font-size:1.1rem;line-height:2.5}
 .nav-menu a:hover,.show:hover{color:#135cf3}
-.image-index,.image-prive,.image-reservation{position:relative;width:100%;color:#fff;text-align:center;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.image-index img,.image-prive img,.image-reservation img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}
-.image-index{height:620px}
-.form-container{display:flex;flex-direction:column;align-items:center;padding:8px;padding-top:20px;margin:0;margin-top:3%;margin-left:3%;width:40%;box-shadow:0 0 10px rgba(0,0,0,0.6);color:#fff;background-color: #000;border-radius:20px;z-index:1;background-color: rgba(0, 0, 0, 0.8);}
+.image-index {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.image-index h1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: #000000;
+  width: 80%;
+  margin-top: auto;
+  z-index: 1;
+}
+.bouton-devis1 {
+  z-index: 1;
+  color: #135cf3;
+}
+.bouton-devis1{background-color:#135cf3;color:#fff;padding:1% 5%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%}.bouton-devis1 ion-icon{font-size:20px}
+.form-container{display:flex;flex-direction:column;align-items:center;padding:8px;padding-top:20px;margin:0;margin-top:3%;margin-left:3%;width:40%;box-shadow:0 0 2px rgb(255, 255, 255);color:#fff;background-color: #000;z-index:1}
 .form-container h2{color:#fff}
 .form-container label{display:block;margin-bottom:8px;font-size:19px;margin-left:2%;text-align:left;color:#fff;}
+textarea {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 .form-container input,.form-container select{width:100%;height:35px;padding:8px 80px 8px 8px;margin-bottom:16px;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000}
-.form-container button{display:flex;justify-content:center;background-color:#135cf3;color:#ffff;padding:10px 40px;font-size:18px;margin:4% auto 5%;border:none;border-radius:4px;cursor:pointer}
+.form-container button{display:flex;justify-content:center;background-color:#135cf3;color:#ffff;padding:10px 40px;font-size:18px;margin:2% auto 5%;border:none;border-radius:4px;cursor:pointer}
 .form-container button:hover{background-color:#6c2210}
 #passengers{font-size:15px}
 .inline-container{display:flex;justify-content:space-between;width:100%}
 .inline-item{display:flex;flex-direction:column;width:48%}
-.image-prive{height:500px}
-.image-reservation{height:500px}
 .photo-id {display: flex;justify-content: center;}
 .photo-id img {width: 20%;border-radius: 20%;}
 .camry-index img{width:75%;height:30%;margin-bottom:5%}
@@ -134,12 +167,22 @@ ion-icon{font-size:70px;color: #fff;}
   .icon-item h3{font-size:13px}
   ion-icon{font-size:45px}
   .bouton-devis3{display:flex;justify-content:center;font-size:18px;padding:2%;text-decoration:none;margin:7% 15% 10%}
-  .form-container{width:80%;padding-top:15px;margin:0 auto}
+  .form-container{width:80%;padding-top:15px;margin:0 auto;margin-bottom: -10%;}
   .inline-container{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
   .inline-item{width:48%}
-  .image-index{flex-direction:column-reverse;height:680px}
-  .image-index h1{margin-top:8%;z-index:1}
-  .form-container input,.form-container select{width:100%;height:35px;padding:8px 80px 8px 8px;margin-bottom:16px;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000}
+  .image-index {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container input,.form-container select{width:100%;height:35px;padding:8px 20px 8px 20px;margin-bottom:16px;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000}
   .slide{opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s}
   .slide-in-done {opacity: 1;transform: translateX(0);}
   .p-vtc p {font-size: 14px;text-align: left;background-color: #222;width: 80%;margin-left: auto;margin-right: auto;word-spacing: 1px;padding-left: 5%;}
