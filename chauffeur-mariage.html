@@ -154,15 +154,18 @@
     <a class="bouton-devis3" href="tel:+33647851015" title="prix location voiture avec chauffeur pour mariage">CONTACTEZ - NOUS</a>
     <h2>Prix location voiture avec chauffeur pour mariage</h2>
     <div class="p-vtc">
-        <p>Profitez de notre service de location de voiture avec chauffeur pour mariage à <strong>500 € la
-                journée</strong> avec la voiture décorée. <br><br>
-            - <strong>Élégance</strong> : Arrivez à votre cérémonie et réception dans un véhicule luxueux, le dernier
-            Mercedes Classe E 2024. <br>
-            - <strong>Sérénité</strong> : Chauffeurs professionnels, courtois et expérimentés.<br>
-            - <strong>Réservation facile</strong> : Formulaire de contact ou téléphone. <br><br>
-            Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous nous chargeons de chaque
-            détail pour rendre votre journée inoubliable.
-        </p>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+            <img src="classe-e-berline.webp" alt="">
+            Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
+            Heures additionnelles : <strong>80 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            <img src="mercedes-classe-s.webp" alt="">
+            Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
+            Heures additionnelles : <strong>120 €</strong> </p>
+        </div>
     </div>
     <h2>RESERVATION</h2>
     <div class="form-container">
@@ -274,6 +277,33 @@
                 });
             });
         });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5
+                };
+                function observeStep(entry, observer) {
+                    entry.target.classList.add('slide-in-done');
+                    observer.unobserve(entry.target);
+                }
+                function createObserver(element) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                observeStep(entry, observer);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(element);
+                }
+                var elements = document.querySelectorAll('.slide');
+                elements.forEach(function (element) {
+                    createObserver(element);
+                });
+            });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
