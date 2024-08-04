@@ -151,6 +151,7 @@ ion-icon{font-size:70px;color: #fff;}
   .avantages-taxi-mob{display:block}
   .nos-vehicules{display:flex;justify-content:center;width: 80%;margin-left: auto;margin-right: auto;}
   .nos-vehicules img{width:100%;border-radius: 20px;}
+  .vehicules-index{margin-bottom: 15%;}
   #contact{padding-top:4%;padding-bottom:4%;margin-top:20%}#contact h5{margin-top:10%;margin-bottom:5%;font-weight:600}#contact p{text-align:center;margin:0 0 3%;color:#fff;font-size:17px}.contact-icon{display:flex;position:fixed;padding:1% 2%;background-color:#01002c;right:4%;bottom:5%;border-radius:20px}.contact-icon a{font-size:18px;font-weight:500;color:#fff;text-decoration:none}
   .liens-wp a,
   .liens-wp h6 {
