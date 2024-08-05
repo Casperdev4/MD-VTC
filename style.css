@@ -8,7 +8,7 @@ h1,h2{text-align:center;font-weight:600}
 h1{font-size:40px;line-height:1.4;margin:5% 3%;color: #000;font-family: 'Trajan', serif;}
 p{font-size:19px;margin:5%;text-align:center;background-color:#000;padding:2%}
 .p-lumiere,.p-vtc{line-height:1.8}
-h2{color:#135cf3;margin:7% 3% 5%;font-size:30px}
+h2{color:#135cf3;margin:7% 3% 5%;font-size:30px;font-family: 'Trajan', serif;}
 h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
 .hr{margin:5% auto auto;width:90%}
 .icon,.logo,.navbar{display:flex}
