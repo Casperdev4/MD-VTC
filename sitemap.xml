@@ -71,6 +71,15 @@
 </url>
 
 <url>
+<loc>https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+        </geo:geo>
+</url>
+
+<url>
 <loc>https://chauffeur-prive-paris-idf.fr/transfert-aeroport.html</loc>
         <geo:geo>
             <geo:format>kml</geo:format>
@@ -89,24 +98,6 @@
 </url>
 
 <url>
-<loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mariage.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
-</url>
-
-<url>
-<loc>https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
-</url>
-
-<url>
 <loc>https://chauffeur-prive-paris-idf.fr/deplacements-professionnels.html</loc>
         <geo:geo>
             <geo:format>kml</geo:format>
@@ -116,77 +107,38 @@
 </url>
 
 <url>
-<loc>https://chauffeur-prive-paris-idf.fr/garde-du-corps.html</loc>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/index.jpg</image:loc>
-        <image:caption>Découvrez Paris avec notre service de chauffeur privé. Admirez la majesté de la Tour Eiffel éclairée la nuit, symbole emblématique de la ville.</image:caption>
-        <image:title>taxi Seine-et-Marne (77)</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mercedes.webp</image:loc>
-        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
-        <image:title>chauffeur prive Seine-et-Marne (77)</image:title>
-    </image:image>
-        <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/avion.webp</image:loc>
-        <image:caption>Optez pour notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme pour vos déplacements professionnels.</image:caption>
-        <image:title>taxi airport paris</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/aeroport.webp</image:loc>
-        <image:caption>Choisissez notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme, digne d'un vrai taxi parisien.</image:caption>
-        <image:title>transfert aeroport</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-pro.webp</image:loc>
-        <image:caption>Optez pour notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme pour vos déplacements professionnels.</image:caption>
-        <image:title>uber taxi Seine-et-Marne (77)</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-professionnel.webp</image:loc>
-        <image:caption>Choisissez notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme, digne d'un vrai taxi parisien.</image:caption>
-        <image:title>chauffeur prive</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/le-bistrol.webp</image:loc>
-        <image:caption>Profitez de notre service de mise à disposition de chauffeur privé pour les palaces, offrant une expérience de transport personnalisée et haut de gamme à la hauteur des exigences les plus élevées.</image:caption>
-        <image:title>le bistrol</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/le-meurice.webp</image:loc>
-        <image:caption>Choisir notre chauffeur privé, c'est s'offrir le luxe d'une expérience de transport à la hauteur du prestigieux Le Meurice.</image:caption>
-        <image:title>mise à disposition</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/tourisme.webp</image:loc>
-        <image:caption>Optez pour notre service de chauffeur privé pour le tourisme et profitez d'une expérience de transport haut de gamme.</image:caption>
-        <image:title>uber taxi</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/monument.webp</image:loc>
-        <image:caption>Optez pour notre service de chauffeur privé pour découvrir les monuments de Paris et profitez d'une expérience de transport haut de gamme.</image:caption>
-        <image:title>tourisme paris</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-c.webp</image:loc>
-        <image:caption>Découvrez l'élégance et les performances de la Mercedes Classe C, symbole de luxe et de sophistication dans la conception automobile.</image:caption>
-        <image:title>chauffeur mercedes</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-e.webp</image:loc>
-        <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
-        <image:title>chauffeur Seine-et-Marne (77)</image:title>
-    </image:image>
+<loc>https://chauffeur-prive-paris-idf.fr/location-chauffeur-sans-voiture.html</loc>
         <geo:geo>
             <geo:format>kml</geo:format>
             <geo:region>ile-de-france</geo:region>
-            <geo:placename>Seine-et-Marne</geo:placename>
-            <geo:BoundingBox>
-                <geo:west>2.4482</geo:west>
-                <geo:east>3.4044</geo:east>
-                <geo:north>49.2130</geo:north>
-                <geo:south>48.2053</geo:south>
-            </geo:BoundingBox>
+            <geo:placename>Paris</geo:placename>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-paris-idf.fr/garde-du-corps.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-paris-idf.fr/materiels-cinema.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mariage.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
         </geo:geo>
 </url>
 
