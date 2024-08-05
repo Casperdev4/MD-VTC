@@ -207,7 +207,7 @@
             <img src="./logo/img-form.png" alt="societe assainissement paris 75">
         </div>
         <form action="traitement.php" method="post">
-            <label for="name">Nom</label>
+            <label for="name">Nom / Prénom</label>
             <input type="text" id="name" name="nom" required>
             <label for="phone">Téléphone</label>
             <input type="tel" id="phone" name="telephone" required>
@@ -239,7 +239,7 @@
                 </div>
                 <div class="inline-item">
                     <label for="children">Enfants</label>
-                    <select id="children" name="enfants" required>
+                    <select id="children" name="enfants">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -250,7 +250,7 @@
             <div class="inline-container">
                 <div class="inline-item">
                     <label for="luggage">Bagages</label>
-                    <select id="luggage" name="bagages" required>
+                    <select id="luggage" name="bagages">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -259,7 +259,16 @@
                 </div>
                 <div class="inline-item">
                     <label for="car-seats">Sièges auto</label>
-                    <select id="car-seats" name="sieges_auto" required>
+                    <select id="car-seats" name="sieges_auto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="inline-item">
+                    <label for="car-seats">Réhausseur</label>
+                    <select id="car-seats" name="sieges_auto">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
