@@ -12,7 +12,7 @@
     <meta name="description"
         content="Réservez votre chauffeur privé avec MD VTC pour des déplacements impeccables. Profitez d'un service fiable, ponctuel et luxueux. Experts du transport privé, nos chauffeurs vous assurent une expérience sécurisée. Réservez dès maintenant pour des trajets en toute sérénité.">
     <link href="style.css" rel="stylesheet">
-    <title>Chauffeur Prive Paris - L'Élégance de vos Trajets Privés avec MD VTC</title>
+    <title>Chauffeur Prive Paris - Chauffeur avec Bodyguard</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./logo/apple-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
@@ -62,27 +62,26 @@
     }
     }
     </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
     <script>
-        function initAutocomplete() {
-            var departureInput = document.getElementById('departure1');
-            var arrivalInput = document.getElementById('arrival1');
-            var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
-                types: ['geocode']
-            });
-            var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
-                types: ['geocode']
-            });
-            autocompleteDeparture.addListener('place_changed', function () {
-                var place = autocompleteDeparture.getPlace();
-            });
-            autocompleteArrival.addListener('place_changed', function () {
-                var place = autocompleteArrival.getPlace();
-            });
-        }
+    function initAutocomplete() {
+        var departureInput = document.getElementById('departure1');
+        var arrivalInput = document.getElementById('arrival1');
+        var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
+            types: ['geocode']
+        });
+        var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
+            types: ['geocode']
+        });
+        autocompleteDeparture.addListener('place_changed', function() {
+            var place = autocompleteDeparture.getPlace();
+        });
+        autocompleteArrival.addListener('place_changed', function() {
+            var place = autocompleteArrival.getPlace();
+        });
+    }
 
-        google.maps.event.addDomListener(window, 'load', initAutocomplete);
+    google.maps.event.addDomListener(window, 'load', initAutocomplete);
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZNKZVWS7K"></script>
     <script>
@@ -126,14 +125,17 @@
                         <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
                     </li>
                     <li class="drop-item">
-                        <a href="chauffeur-pour-entreprise.html" title="chauffeur de luxe">Déplacement professionnel</a>
+                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement professionnel</a>
                     </li>
                     <li class="drop-item">
-                        <a href="chauffeur-bodyguard.html"
+                        <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
+                    </li>
+                    <li class="drop-item">
+                        <a href="garde-du-corps.html"
                             title="visite de paris en voiture avec chauffeur">Bodyguard</a>
                     </li>
                     <li class="drop-item">
-                        <a href="van-cinema.html" title="visite de paris en voiture avec chauffeur">Cinéma</a>
+                        <a href="materiels-cinema.html" title="visite de paris en voiture avec chauffeur">Cinéma</a>
                     </li>
                     <li class="drop-item">
                         <a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a>
@@ -150,37 +152,55 @@
     </nav>
     <div class="image-index">
         <img src="index.webp" alt="chauffeur-prive-paris-75" class="background-image">
-        <h1><i>Location Chauffeur sans Voiture</i></h1>
+        <h1><i>Chauffeur Prive Paris <br> Bodyguard</i></h1>
         <a class="bouton-devis1" href="uber-taxi-prix.html" title="chauffeur prive">RESERVATION</a>
     </div>
-    <h2>CHAUFFEUR</h2>
+    <h2>BODYGUARD</h2>
     <div class="ville-lumiere">
-        <img src="chauffeur-sans-vehicule.jpg" alt="location de voiture avec chauffeur pour mariage"
-            title="voiture mariage" loading="lazy" decoding="async">
-        <img src="chauffeur-sans-voiture.webp" alt="location voiture de mariage avec chauffeur"
-            title="location voiture mariage" loading="lazy" decoding="async">
+        <img src="bodyguard.webp" alt="vtc paris" title="transfert aeroport" loading="lazy" decoding="async">
+        <img src="bodyguard-chauffeur.webp" alt="vtc paris pas cher" title="chauffeur prive paris" loading="lazy"
+            decoding="async">
     </div>
     <div class="ville-lumiere-mob">
-        <img src="chauffeur-sans-voiture.webp" alt="location de voiture de mariage avec chauffeur"
-            title="location de voiture mariage" loading="lazy" decoding="async">
+        <img src="bodyguard-chauffeur.webp" alt="taxi paris gare de lyon" title="transfert aeroport" loading="lazy"
+            decoding="async">
     </div>
     <div class="p-lumiere">
-        <p>Nous proposons des services de <strong>chauffeur personnel</strong> pour conduire votre propre véhicule. Nos
-            chauffeurs professionnels sont sélectionnés pour leur expérience, leur discrétion et leur ponctualité,
-            garantissant ainsi un service de haute qualité adapté à vos besoins spécifiques. Que ce soit pour vos
-            déplacements quotidiens, vos voyages d'affaires ou vos événements spéciaux, nos chauffeurs assurent votre
-            confort et votre sécurité.
-            <br><br>
-            <strong>Nos services incluent :</strong><br>
-            Déplacements quotidiens et courses personnelles.<br>
-            Transferts aéroportuaires et trajets longue distance.<br>
-            Chauffeur pour événements spéciaux (mariages, soirées, etc..).<br>
-            Services de sécurité pour les clients VIP.<br>
-            <br>
-            <strong>Tarification :</strong><br>
-            Nos tarifs sont établis sur devis pour mieux s'adapter à vos besoins spécifiques. Pour obtenir un devis
-            personnalisé, veuillez nous contacter par téléphone ou en remplissant le formulaire de contact ci-dessous.
+        <p>
+            Tous nos Partners sont agrémentés en protection rapprochée et habilités à assurer votre sécurité. <br><br>
+            Nous mettons tout en œuvre pour nous adapter à vos besoins spécifiques, notamment en vous proposant un
+            service de protection rapprochée à Paris et dans toute la France.
+        </p>
     </div>
+    <h2>Sécurité et confort</h2>
+    <div class="p-lumiere">
+        <p>
+            Nos chauffeurs vous conduiront, à bord du véhicule de votre choix, dans tous vos déplacements. En option,
+            vous pouvez également être accompagné de gardes du corps, de gardes du corps armés, ou d'un convoi de
+            véhicules terrestres comprenant escorte moto, escorte voiture ou voiture blindée. Nous offrons également des
+            solutions de surveillance électronique avancée. <br><br> Si vous préférez, il est possible de bénéficier uniquement
+            d'un bodyguard sans chauffeur. Votre sécurité et confort sont notre priorité absolue.
+        </p>
+    </div>
+    <h2>Confidentialité et respect de la vie privée</h2>
+    <div class="p-lumiere">
+        <p>
+            Nous sommes habilités au transport d’hommes d’état, ambassadeurs, familles princières ou autres
+            personnalités. Toutes nos missions sont effectuées dans le respect de la vie privée de nos clients.
+        </p>
+    </div>
+    <h2>Protection optimale</h2>
+    <div class="p-lumiere">
+        <p>
+            Nos gardes du corps mettent leurs connaissances et leurs aptitudes professionnelles au service de votre
+            sécurité. Ce sont de véritables spécialistes de la protection issus des services spéciaux, anciens
+            militaires ou légionnaires, formés au combat rapproché ainsi qu’à la détection de risques et de menaces. <br><br> Ils
+            peuvent se présenter en costume pour des occasions formelles ou en tenue civile pour une discrétion accrue.
+            Nous disposons de tous les moyens nécessaires pour assurer votre sécurité, notamment des radios numériques à
+            la qualité d’écoute optimale et des oreillettes intra-auriculaires.
+        </p>
+    </div>
+    <a class="bouton-devis3" href="tel:+33647851015" title="vtc pas cher">CONTACTEZ - NOUS</a>
     <h2>RESERVATION</h2>
     <div class="form-container">
         <div class="image-container">
@@ -281,8 +301,9 @@
             </h6>
         </div>
     </div>
-    <div class="contact-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc"
-            target="_blank"><img src="numero-vtc.webp" alt="contact"></a></div>
+    <div class="contact-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc" target="_blank"><img src="numero-vtc.webp"
+                alt="contact"></a>
+    </div>
     <script>
         const list = document.querySelectorAll('.list');
         function activeLink() {
