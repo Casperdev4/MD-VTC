@@ -62,26 +62,27 @@
     }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
     <script>
-    function initAutocomplete() {
-        var departureInput = document.getElementById('departure1');
-        var arrivalInput = document.getElementById('arrival1');
-        var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
-            types: ['geocode']
-        });
-        var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
-            types: ['geocode']
-        });
-        autocompleteDeparture.addListener('place_changed', function() {
-            var place = autocompleteDeparture.getPlace();
-        });
-        autocompleteArrival.addListener('place_changed', function() {
-            var place = autocompleteArrival.getPlace();
-        });
-    }
+        function initAutocomplete() {
+            var departureInput = document.getElementById('departure1');
+            var arrivalInput = document.getElementById('arrival1');
+            var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
+                types: ['geocode']
+            });
+            var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
+                types: ['geocode']
+            });
+            autocompleteDeparture.addListener('place_changed', function () {
+                var place = autocompleteDeparture.getPlace();
+            });
+            autocompleteArrival.addListener('place_changed', function () {
+                var place = autocompleteArrival.getPlace();
+            });
+        }
 
-    google.maps.event.addDomListener(window, 'load', initAutocomplete);
+        google.maps.event.addDomListener(window, 'load', initAutocomplete);
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZNKZVWS7K"></script>
     <script>
@@ -125,14 +126,14 @@
                         <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
                     </li>
                     <li class="drop-item">
-                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement professionnel</a>
+                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement
+                            professionnel</a>
                     </li>
                     <li class="drop-item">
                         <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
                     </li>
                     <li class="drop-item">
-                        <a href="garde-du-corps.html"
-                            title="visite de paris en voiture avec chauffeur">Bodyguard</a>
+                        <a href="garde-du-corps.html" title="visite de paris en voiture avec chauffeur">Bodyguard</a>
                     </li>
                     <li class="drop-item">
                         <a href="materiels-cinema.html" title="visite de paris en voiture avec chauffeur">Cinéma</a>
@@ -170,33 +171,41 @@
         <p>
             Profitez d'une mise à disposition personnalisée avec notre service de chauffeur privé. Nos chauffeurs
             professionnels et discrets sont à votre disposition pour répondre à tous vos besoins de déplacement pendant
-            la durée de votre choix. <br><br> Nous sommes spécialisés dans le transport de personnes importantes, offrant des
-            services de haute qualité adaptés aux ambassadeurs, ministres, célébrités et autres personnalités
-            influentes. Voyagez en toute flexibilité et confort, avec l'assurance d'un service irréprochable, sécurisé
-            et ponctuel. <br><br> Réservez dès maintenant pour découvrir une expérience de voyage exceptionnelle, spécialement
-            conçue pour répondre aux exigences des plus hautes personnalités.
+            la durée de votre choix. <br><br>
+            Nous sommes spécialisés dans le transport de personnes importantes, offrant des services de haute qualité
+            adaptés aux ambassadeurs, ministres, célébrités et autres personnalités influentes. Voyagez en toute
+            flexibilité et confort, avec l'assurance d'un service irréprochable, sécurisé et ponctuel. <br><br>
+            En plus de nos services de transport, nous proposons également des visites guidées et des city tours de
+            Paris avec un guide diplômé. Découvrez les trésors cachés de la ville lumière à travers des circuits
+            personnalisés et enrichissants.
         </p>
     </div>
     <a class="bouton-devis3" href="tel:+33647851015" title="tarif mise à disposition vtc">CONTACTEZ - NOUS</a>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-vtc">
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
-            <img src="classe-e-berline.webp" alt="">
-            Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
-            Heures additionnelles : <strong>80 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+                <img src="classe-e-berline.webp" alt="">
+                Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
+                Heures additionnelles : <strong>80 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
-            <img src="van.webp" alt="">
-            Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
-            Heures additionnelles : <strong>90 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+                <img src="van.webp" alt="">
+                Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
+                Heures additionnelles : <strong>90 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
-            <img src="mercedes-classe-s.webp" alt="">
-            Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
-            Heures additionnelles : <strong>120 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+                <img src="mercedes-classe-s.webp" alt="">
+                Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
+                Heures additionnelles : <strong>120 €</strong>
+            </p>
         </div>
     </div>
     <a class="bouton-devis3" href="tel:+33647851015" title="prix taxi cdg paris">CONTACTEZ - NOUS</a>
@@ -291,7 +300,7 @@
         <h5>CONTACTEZ - NOUS</h5>
         <p class="liens">Tel : <a href="tel:+33647851015" target="_blank" title="tel">
                 +33647851015</a> <br><br>
-                <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" title="WhatsApp">WhatsApp</a> <br><br>
+            <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" title="WhatsApp">WhatsApp</a> <br><br>
             E-mail :<a href="mailto:mdvtc@orange.fr" target="_blank" title="email"> mdvtc@orange.fr</a>
         </p>
         <div class="liens-wp">
@@ -300,8 +309,8 @@
             </h6>
         </div>
     </div>
-    <div class="contact-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc" target="_blank"><img src="numero-vtc.webp"
-                alt="contact"></a>
+    <div class="contact-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc"
+            target="_blank"><img src="numero-vtc.webp" alt="contact"></a>
     </div>
     <script>
         const list = document.querySelectorAll('.list');
