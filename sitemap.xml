@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr</loc>
@@ -63,92 +63,51 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur paris</image:title>
     </image:image>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/transfert-aeroport.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/mise-a-disposition-vtc.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/deplacements-professionnels.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/location-chauffeur-sans-voiture.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/garde-du-corps.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/materiels-cinema.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mariage.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/tarif-chauffeur-prive.html</loc>
-        <geo:geo>
-            <geo:format>kml</geo:format>
-            <geo:region>ile-de-france</geo:region>
-            <geo:placename>Paris</geo:placename>
-        </geo:geo>
+
 </url>
 
 </urlset>
