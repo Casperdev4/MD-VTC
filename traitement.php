@@ -1,35 +1,34 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
-$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure', 'passagers', 'enfants', 'bagages', 'sieges_auto'];
-foreach ($required_fields as $field) {
-    if (empty($_POST[$field])) {
-        die('Un des champs requis est manquant.');
-    }
-}
-
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
 $telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
+$prestation = htmlspecialchars($_POST['prestation'], ENT_QUOTES, 'UTF-8');
 $depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
 $arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
+$numero = htmlspecialchars($_POST['numero'] ?? '', ENT_QUOTES, 'UTF-8');
 $date = htmlspecialchars($_POST['date'], ENT_QUOTES, 'UTF-8');
 $heure = htmlspecialchars($_POST['heure'], ENT_QUOTES, 'UTF-8');
 $passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
 $enfants = htmlspecialchars($_POST['enfants'], ENT_QUOTES, 'UTF-8');
 $bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
 $sieges_auto = htmlspecialchars($_POST['sieges_auto'], ENT_QUOTES, 'UTF-8');
+$rehausseur = htmlspecialchars($_POST['rehausseur'], ENT_QUOTES, 'UTF-8');
 $commentaires = htmlspecialchars($_POST['commentaires'], ENT_QUOTES, 'UTF-8');
 
 $message = "NOM : $nom\n";
 $message .= "TÉLÉPHONE : $telephone\n";
+$message .= "PRESTATION : $prestation\n";
 $message .= "DÉPART : $depart\n";
 $message .= "ARRIVÉE : $arrive\n";
+$message .= "NUMÉRO DE VOL/TRAINS : $numero\n";
 $message .= "DATE : $date\n";
 $message .= "HEURE : $heure\n";
 $message .= "ADULTES : $passagers\n";
 $message .= "ENFANTS : $enfants\n";
 $message .= "BAGAGES : $bagages\n";
 $message .= "SIÈGES AUTO : $sieges_auto\n";
+$message .= "RÉHAUSSEUR : $rehausseur\n";
 $message .= "COMMENTAIRES : $commentaires\n";
 
 use PHPMailer\PHPMailer\PHPMailer;

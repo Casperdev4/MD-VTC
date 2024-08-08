@@ -200,13 +200,23 @@
     <h2>RESERVATION</h2>
     <div class="form-container">
         <div class="image-container">
-            <img src="./logo/img-form.png" alt="societe assainissement paris 75">
+            <img src="./logo/img-form.png" alt="chauffeur prive paris">
         </div>
-        <form action="traitement.php" method="post">
+        <form action="traitement.php" method="post" onsubmit="return validateForm()">
             <label for="name">Nom / Prénom</label>
             <input type="text" id="name" name="nom" required>
             <label for="phone">Téléphone</label>
             <input type="tel" id="phone" name="telephone" required>
+            <label for="prestation">Prestation</label>
+            <select id="prestation" name="prestation">
+                <option value="transfert">Transfert aéroport</option>
+                <option value="MAD">Mise à disposition</option>
+                <option value="mariage">Mariage</option>
+                <option value="tourisme">Tourisme</option>
+                <option value="pro">Déplacement professionnel</option>
+                <option value="trajet">Trajet Privé</option>^
+                <option value="autre">Autre</option>
+            </select>
             <label for="departure">Départ</label>
             <input type="text" id="departure1" name="lieu_depart" required>
             <label for="arrival">Arrivée</label>
@@ -226,7 +236,7 @@
             <div class="inline-container">
                 <div class="inline-item">
                     <label for="passengers">Adultes</label>
-                    <select id="passengers" name="passagers" required>
+                    <select id="passengers" name="passagers">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -263,8 +273,8 @@
                     </select>
                 </div>
                 <div class="inline-item">
-                    <label for="car-seats">Réhausseur</label>
-                    <select id="car-seats" name="sieges_auto">
+                    <label for="rehausseur">Réhausseur</label>
+                    <select id="rehausseur" name="rehausseur">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
