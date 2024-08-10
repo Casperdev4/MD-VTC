@@ -4,12 +4,12 @@
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr</loc>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/index.jpg</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/index.webp</image:loc>
         <image:caption>Découvrez Paris avec notre service de chauffeur privé. Admirez la majesté de la Tour Eiffel éclairée la nuit, symbole emblématique de la ville.</image:caption>
         <image:title>taxi paris</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mercedes.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-prive.webp</image:loc>
         <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
         <image:title>chauffeur prive paris</image:title>
     </image:image>
@@ -19,47 +19,52 @@
         <image:title>taxi airport paris</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/aeroport.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/service-chauffeur.webp</image:loc>
         <image:caption>Choisissez notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme, digne d'un vrai taxi parisien.</image:caption>
         <image:title>transfert aeroport</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-pro.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-prof.webp</image:loc>
         <image:caption>Optez pour notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme pour vos déplacements professionnels.</image:caption>
         <image:title>uber taxi paris</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-professionnel.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-sans-voiture.webp</image:loc>
         <image:caption>Choisissez notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme, digne d'un vrai taxi parisien.</image:caption>
         <image:title>chauffeur prive</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/le-bistrol.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/bodyguard.webp</image:loc>
         <image:caption>Profitez de notre service de mise à disposition de chauffeur privé pour les palaces, offrant une expérience de transport personnalisée et haut de gamme à la hauteur des exigences les plus élevées.</image:caption>
         <image:title>le bistrol</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/le-meurice.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-e.webp</image:loc>
         <image:caption>Choisir notre chauffeur privé, c'est s'offrir le luxe d'une expérience de transport à la hauteur du prestigieux Le Meurice.</image:caption>
         <image:title>mise à disposition</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/tourisme.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/classe-e-berline.webp</image:loc>
         <image:caption>Optez pour notre service de chauffeur privé pour le tourisme et profitez d'une expérience de transport haut de gamme.</image:caption>
         <image:title>uber taxi</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/monument.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-s.webp</image:loc>
         <image:caption>Optez pour notre service de chauffeur privé pour découvrir les monuments de Paris et profitez d'une expérience de transport haut de gamme.</image:caption>
         <image:title>tourisme paris</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-c.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/van.webp</image:loc>
         <image:caption>Découvrez l'élégance et les performances de la Mercedes Classe C, symbole de luxe et de sophistication dans la conception automobile.</image:caption>
         <image:title>chauffeur mercedes</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-e.webp</image:loc>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/van-tournage.webp</image:loc>
+        <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
+        <image:title>chauffeur paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/sprinter.png</image:loc>
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur paris</image:title>
     </image:image>
@@ -67,42 +72,114 @@
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-pro.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/siege-enfant.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/transfert-aeroport.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/avion.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/avion-prive.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/mise-a-disposition-vtc.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/mise-a-disposition-chauffeur-voiture.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/service-chauffeur.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/deplacements-professionnels.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-pro.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/deplacement-prof.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/location-chauffeur-sans-voiture.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-sans-vehicule.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-sans-voiture.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/garde-du-corps.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/bodyguard.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/bodyguard-chauffeur.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/materiels-cinema.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/van-tournage.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/van-cinema.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mariage.html</loc>
-
+    <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/chauffeur-mariage.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
+        <image:image>
+        <image:loc>https://chauffeur-prive-paris-idf.fr/mercedes-classe-e.webp</image:loc>
+        <image:caption>Découvrez le luxe et la fiabilité de notre service de chauffeur privé en Mercedes, pour une expérience de transport de premier ordre.</image:caption>
+        <image:title>chauffeur prive paris</image:title>
+    </image:image>
 </url>
 
 <url>
