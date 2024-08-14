@@ -86,7 +86,7 @@ textarea {
 ion-icon{font-size:70px;color: #fff;}
 .bouton-devis3{display:flex;justify-content:center;background-color:#135cf3;color:#fff;font-size:20px;padding:10px;margin:2% 35% 10%;text-decoration:none;border-radius:25px}
 .bouton-devis3:hover{background-color:#6c2210}
-#contact{margin-top:10%;padding:2%;background-color:#000000}#contact h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contact p{color:#fff;background-color:#000000}
+#contact{margin-top:10%;padding:2%;background-color:#222}#contact h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contact p{color:#fff;background-color:#222}
 .liens a {
   color: #ffffff;
   font-size: 18px;
