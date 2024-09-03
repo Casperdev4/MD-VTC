@@ -573,7 +573,7 @@
             });
         });
     </script>
-<script>
+    <script>
     function validateForm() {
         var nom = document.getElementById("name").value.trim();
         var telephone = document.getElementById("phone").value.trim();
@@ -588,36 +588,24 @@
         var sieges_auto = document.getElementById("car-seats").value.trim();
         var rehausseur = document.getElementById("rehausseur").value.trim();
         var commentaires = document.getElementById("comments").value.trim();
-
-        // Vérification que tous les champs obligatoires sont remplis
         if (nom === "" || telephone === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
             alert("Champs obligatoires.");
             return false;
         }
-
-        // Pattern pour valider le numéro de téléphone (seulement les préfixes)
         var telPattern = /^(06|07|\+336|\+337)/;
-
-        // Validation du numéro de téléphone
         if (!telPattern.test(telephone)) {
-            alert("Veuillez entrer un numéro de téléphone valide commençant par 06, 07, +336 ou +337.");
+            alert("Veuillez entrer un numéro de téléphone valide.");
             return false;
         }
-
-        // Vérification des liens et scripts non autorisés dans les commentaires
         var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
         var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-
         if (linkPattern.test(commentaires) || scriptPattern.test(commentaires)) {
             alert("Pas autorisés.");
             return false;
         }
-
-        // Si toutes les validations passent
         return true;
     }
-</script>
-
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
