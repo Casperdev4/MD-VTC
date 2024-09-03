@@ -320,32 +320,37 @@
         });
     </script>
     <script>
-            function validateForm() {
-                var nom = document.getElementById("name").value.trim();
-                var telephone = document.getElementById("phone").value.trim();
-                var prestation = document.getElementById("prestation").value.trim();
-                var lieu_depart = document.getElementById("departure1").value.trim();
-                var lieu_arrivee = document.getElementById("arrival1").value.trim();
-                var date = document.getElementById("date").value.trim();
-                var heure = document.getElementById("heure").value.trim();
-                var passagers = document.getElementById("passengers").value.trim();
-                var enfants = document.getElementById("children").value.trim();
-                var bagages = document.getElementById("luggage").value.trim();
-                var sieges_auto = document.getElementById("car-seats").value.trim();
-                var rehausseur = document.getElementById("rehausseur").value.trim();
-                var commentaires = document.getElementById("comments").value.trim();
-                if (nom === "" || telephone === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
-                    alert("Champs obligatoires.");
-                    return false;
-                }
-                var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-                var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-                if (linkPattern.test(commentaires) || scriptPattern.test(commentaires)) {
-                    alert("Pas autorisés.");
-                    return false;
-                }
-                return true;
-            }
+    function validateForm() {
+        var nom = document.getElementById("name").value.trim();
+        var telephone = document.getElementById("phone").value.trim();
+        var prestation = document.getElementById("prestation").value.trim();
+        var lieu_depart = document.getElementById("departure1").value.trim();
+        var lieu_arrivee = document.getElementById("arrival1").value.trim();
+        var date = document.getElementById("date").value.trim();
+        var heure = document.getElementById("heure").value.trim();
+        var passagers = document.getElementById("passengers").value.trim();
+        var enfants = document.getElementById("children").value.trim();
+        var bagages = document.getElementById("luggage").value.trim();
+        var sieges_auto = document.getElementById("car-seats").value.trim();
+        var rehausseur = document.getElementById("rehausseur").value.trim();
+        var commentaires = document.getElementById("comments").value.trim();
+        if (nom === "" || telephone === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
+            alert("Champs obligatoires.");
+            return false;
+        }
+        var telPattern = /^(06|07|\+336|\+337)/;
+        if (!telPattern.test(telephone)) {
+            alert("Veuillez entrer un numéro de téléphone valide.");
+            return false;
+        }
+        var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
+        var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
+        if (linkPattern.test(commentaires) || scriptPattern.test(commentaires)) {
+            alert("Pas autorisés.");
+            return false;
+        }
+        return true;
+    }
     </script>
 </body>
 
