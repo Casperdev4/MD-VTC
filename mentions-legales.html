@@ -149,7 +149,103 @@
             </h5>
         </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuToggle = document.getElementById("btn");
+            var navLinks = document.querySelectorAll(".nav-menu a");
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    menuToggle.checked = false;
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            function observeStep(entry, observer) {
+                entry.target.classList.add('slide-in-done');
+                observer.unobserve(entry.target);
+            }
+
+            function createObserver(element) {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            observeStep(entry, observer);
+                        }
+                    });
+                }, observerOptions);
+
+                observer.observe(element);
+            }
+
+            // Observer chaque élément .valeur
+            var elements = document.querySelectorAll('.valeur');
+            elements.forEach(function (element) {
+                createObserver(element);
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.8
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-up');
+                    }
+                });
+            }, options);
+
+            const elements = document.querySelectorAll('.icon-anime h3, .bouton-devis3');
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value.trim();
+            var tel = document.getElementById("tel").value.trim();
+            var services = document.getElementById("services").value.trim();
+            var comments = document.getElementById("comments").value.trim();
+            if (name === "" || tel === "" || services === "" || comments === "") {
+                alert("Tous les champs sont obligatoires.");
+                return false;
+            }
+            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
+            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
+
+            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
+                alert("Pas autorisés.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 
 </html>
