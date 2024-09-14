@@ -1,12 +1,10 @@
 // Script pour activer le lien sur le survol
 const list = document.querySelectorAll('.list');
 function activeLink() {
-    list.forEach((item) =>
-        item.classList.remove('active'));
+    list.forEach((item) => item.classList.remove('active'));
     this.classList.add('active');
 }
-list.forEach((item) =>
-    item.addEventListener('mouseover', activeLink));
+list.forEach((item) => item.addEventListener('mouseover', activeLink));
 
 // Script pour fermer le menu après le clic
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,28 +53,3 @@ function validateForm() {
 
     return true;
 }
-
-// Google Maps Autocomplete pour les champs départ et arrivée
-function initAutocomplete() {
-    var departureInput = document.getElementById('departure1');
-    var arrivalInput = document.getElementById('arrival1');
-    var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
-        types: ['geocode']
-    });
-    var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
-        types: ['geocode']
-    });
-    autocompleteDeparture.addListener('place_changed', function () {
-        var place = autocompleteDeparture.getPlace();
-    });
-    autocompleteArrival.addListener('place_changed', function () {
-        var place = autocompleteArrival.getPlace();
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', initAutocomplete);
-
-// Import des icônes Ionicons
-import { defineCustomElements } from 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js';
-defineCustomElements(window);
-
