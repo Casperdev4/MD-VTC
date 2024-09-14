@@ -79,3 +79,4 @@ google.maps.event.addDomListener(window, 'load', initAutocomplete);
 // Import des icônes Ionicons
 import { defineCustomElements } from 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js';
 defineCustomElements(window);
+
