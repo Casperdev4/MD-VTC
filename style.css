@@ -83,8 +83,8 @@ textarea {
 .icon-atouts{display:flex;justify-content:space-around;width:100%}
 .icon-item{text-align:center;margin-top:1%}
 ion-icon{font-size:70px;color: #fff;}
-.bouton-devis3{display:flex;justify-content:center;background-color:#135cf3;color:#fff;font-size:20px;padding:10px;margin:2% 35% 10%;text-decoration:none;border-radius:25px}
-.bouton-devis3:hover{background-color:#6c2210}
+.bouton-3{display:flex;justify-content:center;background-color:#135cf3;color:#fff;font-size:20px;padding:10px;margin:2% 35% 10%;text-decoration:none;border-radius:25px}
+.bouton-3:hover{background-color:#6c2210}
 #contact{margin-top:10%;padding:2%;background-color:#222}#contact h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contact p{color:#fff;background-color:#222}
 .liens a {
   color: #ffffff;
@@ -166,7 +166,7 @@ ion-icon{font-size:70px;color: #fff;}
   .bouton-devis1 {
     padding: 2% 4% 2% 4%;
   }
-  .bouton-devis3{display:flex;justify-content:center;font-size:18px;padding:2%;text-decoration:none;margin:7% 15% 10%}
+  .bouton-3{display:flex;justify-content:center;font-size:18px;padding:2%;text-decoration:none;margin:7% 15% 10%}
   .form-container{width:85%;padding-top:20px;padding-left: 0;padding-right: 0;margin:0 auto;margin-bottom: -5%;margin-top: 10%;}
   .inline-container{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
   .inline-item{width:48%}
