@@ -73,8 +73,8 @@ textarea {
 .inline-item{display:flex;flex-direction:column;width:48%}
 .camry-index img{width:75%;height:30%;margin-bottom:5%}
 .camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
-.ville-lumiere{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
-.ville-lumiere img{width:40%;height:auto;border-radius: 20px}
+.services-pc{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
+.services-pc img{width:40%;height:auto;border-radius: 20px}
 .gaga {display: flex;justify-content: center;align-items: center;width: 100%;gap: 2%;margin-top: 2%;}
 .gaga img {width: 30%;height: 300px;}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
@@ -196,7 +196,7 @@ ion-icon{font-size:70px;color: #fff;}
   .nos-vehicules-pc,
   .presta1,
   .presta2,
-  .ville-lumiere,.gaga {
+  .services-pc,.gaga {
     display: none
   }
 }
