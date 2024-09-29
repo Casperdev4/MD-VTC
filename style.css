@@ -22,7 +22,7 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
 .drop-item a,.nav-item a,.show{color:#fff;text-decoration:none;font-size:1.2rem;line-height:3;margin-left:-2%;font-weight:600}
 .drop-item a{margin-left:-4%;font-size:1.1rem;line-height:2.5}
 .nav-menu a:hover,.show:hover{color:#135cf3}
-.image-index {
+.img-index {
   position: relative;
   text-align: center;
   display: flex;
@@ -40,7 +40,7 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
   object-fit: cover;
   z-index: -1;
 }
-.image-index h1 {
+.img-index h1 {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   color: #000000;
@@ -170,7 +170,7 @@ ion-icon{font-size:70px;color: #fff;}
   .form-container{width:85%;padding-top:20px;padding-left: 0;padding-right: 0;margin:0 auto;margin-bottom: -5%;margin-top: 10%;}
   .inline-container{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
   .inline-item{width:48%}
-  .image-index {
+  .img-index {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
