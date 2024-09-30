@@ -86,20 +86,20 @@ ion-icon{font-size:70px;color: #fff;}
 .bouton-3{display:flex;justify-content:center;background-color:#135cf3;color:#fff;font-size:20px;padding:10px;margin:2% 35% 10%;text-decoration:none;border-radius:25px}
 .bouton-3:hover{background-color:#6c2210}
 #contactez-nous{margin-top:10%;padding:2%;background-color:#222}#contactez-nous h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contactez-nous p{color:#fff;background-color:#222}
-.liens a {
+.lien a {
   color: #ffffff;
   font-size: 18px;
 }
-.liens {margin-bottom: 3%;margin-top: 1%;}
-.liens-wp a,
-.liens-wp p {
+.lien {margin-bottom: 3%;margin-top: 1%;}
+.lien-wp a,
+.lien-wp p {
   color: #ffffff;
   font-size: 12px;
   margin: 0;
 }
 .reseau-md{text-align:center;margin-bottom:7%}.reseau-md a{font-size:16px;color:#fff}
-.liens-wp a,
-.liens-wp h5 {
+.lien-wp a,
+.lien-wp h5 {
   font-size: 13px;
   color: #ffffff;
   text-align: center;
@@ -147,8 +147,8 @@ ion-icon{font-size:70px;color: #fff;}
   .nos-vehicules img{width:100%;border-radius: 20px;}
   .vehi-index{margin-bottom: 15%;}
   #contactez-nous{padding-top:4%;padding-bottom:4%;margin-top:20%}#contactez-nous h4{margin-top:10%;margin-bottom:5%;font-weight:600}#contactez-nous p{text-align:center;margin:0 0 3%;color:#fff;font-size:17px}
-  .liens-wp a,
-  .liens-wp h5 {
+  .lien-wp a,
+  .lien-wp h5 {
     font-size: 13px;
     color: #ffffff;
     text-align: center;
@@ -156,7 +156,7 @@ ion-icon{font-size:70px;color: #fff;}
     margin-top: 5%;
     margin-bottom: -3%;
   }
-  .liens-wp {margin-bottom: 0;}
+  .lien-wp {margin-bottom: 0;}
   .reseau-md{text-align:center;margin-bottom:13%}.reseau-md a{font-size:15px;color:#fff}
   .whats-icon{display:flex;position:fixed;right:4%;bottom:3%;background-color: rgba(0, 0, 0, 0);}
   .whats-icon img{display:block;width:60px;border-radius:20px;}
