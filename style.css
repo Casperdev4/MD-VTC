@@ -74,7 +74,7 @@ textarea {
 .camry-index img{width:75%;height:30%;margin-bottom:5%}
 .camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
 .services-pc{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
-.services-pc img{width:40%;height:auto;border-radius: 20px}
+.services-pc img{width:40%;height:320px;border-radius: 20px}
 .gaga {display: flex;justify-content: center;align-items: center;width: 100%;gap: 2%;margin-top: 2%;}
 .gaga img {width: 30%;height: 300px;}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
