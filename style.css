@@ -48,11 +48,11 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
   margin-top: auto;
   z-index: 1;
 }
-.bouton-devis1 {
+.bouton-1 {
   z-index: 1;
   color: #135cf3;
 }
-.bouton-devis1{background-color:#135cf3;color:#fff;padding:1% 5%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%}
+.bouton-1{background-color:#135cf3;color:#fff;padding:1% 5%;border-radius:25px;text-decoration:none;margin-top:auto;margin-bottom:10%}
 .form-container{display:flex;flex-direction:column;align-items:center;padding:8px;padding-top:20px;margin:0;margin-top:3%;margin-left:auto;margin-right: auto;width:55%;box-shadow:0 0 2px rgb(255, 255, 255);color:#fff;background-color: #000;z-index:1}
 .form-container h2{color:#fff}
 form {width: 75%;}
@@ -71,10 +71,10 @@ textarea {
 .image-container{display:flex;justify-content:center;align-items:center;padding:1%;margin-left:auto;margin-right:auto;margin-bottom:4%;border-radius:20px}.image-container img{width:30%;height:auto;border-radius:20px}
 .inline-container{display:flex;justify-content:space-between;width:100%}
 .inline-item{display:flex;flex-direction:column;width:48%}
-.camry-index img{width:75%;height:30%;margin-bottom:5%}
-.camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
+.service-prive img{width:75%;height:30%;margin-bottom:5%}
+.service-prive{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
 .services-pc{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
-.services-pc img{width:40%;height:auto;border-radius: 20px}
+.services-pc img{width:40%;height:320px;border-radius: 20px}
 .gaga {display: flex;justify-content: center;align-items: center;width: 100%;gap: 2%;margin-top: 2%;}
 .gaga img {width: 30%;height: 300px;}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
@@ -85,21 +85,21 @@ textarea {
 ion-icon{font-size:70px;color: #fff;}
 .bouton-3{display:flex;justify-content:center;background-color:#135cf3;color:#fff;font-size:20px;padding:10px;margin:2% 35% 10%;text-decoration:none;border-radius:25px}
 .bouton-3:hover{background-color:#6c2210}
-#contact{margin-top:10%;padding:2%;background-color:#222}#contact h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contact p{color:#fff;background-color:#222}
-.liens a {
+#contactez-nous{margin-top:10%;padding:2%;background-color:#222}#contactez-nous h4{text-align:center;margin:5% 3% 3%;color:#135cf3;font-weight:600;font-size:20px}#contactez-nous p{color:#fff;background-color:#222}
+.lien a {
   color: #ffffff;
   font-size: 18px;
 }
-.liens {margin-bottom: 3%;margin-top: 1%;}
-.liens-wp a,
-.liens-wp p {
+.lien {margin-bottom: 3%;margin-top: 1%;}
+.lien-wp a,
+.lien-wp p {
   color: #ffffff;
   font-size: 12px;
   margin: 0;
 }
-.reseau-contact{text-align:center;margin-bottom:7%}.reseau-contact a{font-size:16px;color:#fff}
-.liens-wp a,
-.liens-wp h5 {
+.reseau-md{text-align:center;margin-bottom:7%}.reseau-md a{font-size:16px;color:#fff}
+.lien-wp a,
+.lien-wp h5 {
   font-size: 13px;
   color: #ffffff;
   text-align: center;
@@ -136,8 +136,8 @@ ion-icon{font-size:70px;color: #fff;}
   .drop-item,.nav-item{list-style:none}
   .drop-item a,.nav-item a,.show{text-decoration:none;font-size:1.2rem;line-height:3;margin-left:-6%}
   .drop-item a{margin-left:-15%;font-size:1rem;line-height:2.5}
-  .camry-index img{width:100%;height:auto}
-  .camry-index{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
+  .service-prive img{width:100%;height:auto}
+  .service-prive{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
   .services-mob{display:flex;justify-content:center;align-items:center;flex-direction:column;margin-top:5%;margin-bottom:5%}
   .services-mob img{width:80%;height:auto;margin-top:3%;margin-bottom:3%;border-radius: 20px;}
   .presta1-mob{display:block}
@@ -146,9 +146,9 @@ ion-icon{font-size:70px;color: #fff;}
   .nos-vehicules{display:flex;justify-content:center;width: 80%;margin-left: auto;margin-right: auto;}
   .nos-vehicules img{width:100%;border-radius: 20px;}
   .vehi-index{margin-bottom: 15%;}
-  #contact{padding-top:4%;padding-bottom:4%;margin-top:20%}#contact h4{margin-top:10%;margin-bottom:5%;font-weight:600}#contact p{text-align:center;margin:0 0 3%;color:#fff;font-size:17px}
-  .liens-wp a,
-  .liens-wp h5 {
+  #contactez-nous{padding-top:4%;padding-bottom:4%;margin-top:20%}#contactez-nous h4{margin-top:10%;margin-bottom:5%;font-weight:600}#contactez-nous p{text-align:center;margin:0 0 3%;color:#fff;font-size:17px}
+  .lien-wp a,
+  .lien-wp h5 {
     font-size: 13px;
     color: #ffffff;
     text-align: center;
@@ -156,14 +156,14 @@ ion-icon{font-size:70px;color: #fff;}
     margin-top: 5%;
     margin-bottom: -3%;
   }
-  .liens-wp {margin-bottom: 0;}
-  .reseau-contact{text-align:center;margin-bottom:13%}.reseau-contact a{font-size:15px;color:#fff}
+  .lien-wp {margin-bottom: 0;}
+  .reseau-md{text-align:center;margin-bottom:13%}.reseau-md a{font-size:15px;color:#fff}
   .whats-icon{display:flex;position:fixed;right:4%;bottom:3%;background-color: rgba(0, 0, 0, 0);}
   .whats-icon img{display:block;width:60px;border-radius:20px;}
   .icon-item{text-align:center;margin-top:1%}
   .icon-item h3{font-size:13px}
   ion-icon{font-size:45px}
-  .bouton-devis1 {
+  .bouton-1 {
     padding: 2% 4% 2% 4%;
   }
   .bouton-3{display:flex;justify-content:center;font-size:18px;padding:2%;text-decoration:none;margin:7% 15% 10%}
