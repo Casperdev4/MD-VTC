@@ -3,18 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="geo.region" content="FR-IDF">
     <meta name="geo.placename" content="Île-de-France, France">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://chauffeur-prive-paris-idf.fr/tarif-chauffeur-prive.html"/>
+    <link rel="canonical" href="https://chauffeur-prive-paris-idf.fr/tarif-chauffeur-prive.html" />
     <meta name="description"
         content="Planifiez votre prochain trajet en toute simplicité avec MD VTC. Utilisez notre page de réservation pour des déplacements rapides et fiables. Obtenez un service de qualité, des chauffeurs expérimentés et une expérience de voyage sans souci.">
     <link href="style.css" rel="stylesheet">
     <title>Prix Chauffeur privé - Tarif navette domicile aéroport</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" sizes="96x96"
-        href="./logo/apple-icon-96x96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./logo/apple-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./logo/ms-icon-32x32.png">
@@ -57,26 +56,27 @@
     }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
     <script>
-    function initAutocomplete() {
-        var departureInput = document.getElementById('departure1');
-        var arrivalInput = document.getElementById('arrival1');
-        var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
-            types: ['geocode']
-        });
-        var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
-            types: ['geocode']
-        });
-        autocompleteDeparture.addListener('place_changed', function() {
-            var place = autocompleteDeparture.getPlace();
-        });
-        autocompleteArrival.addListener('place_changed', function() {
-            var place = autocompleteArrival.getPlace();
-        });
-    }
+        function initAutocomplete() {
+            var departureInput = document.getElementById('departure1');
+            var arrivalInput = document.getElementById('arrival1');
+            var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
+                types: ['geocode']
+            });
+            var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
+                types: ['geocode']
+            });
+            autocompleteDeparture.addListener('place_changed', function () {
+                var place = autocompleteDeparture.getPlace();
+            });
+            autocompleteArrival.addListener('place_changed', function () {
+                var place = autocompleteArrival.getPlace();
+            });
+        }
 
-    google.maps.event.addDomListener(window, 'load', initAutocomplete);
+        google.maps.event.addDomListener(window, 'load', initAutocomplete);
     </script>
     <link rel="preload" href="chauffeur-prive-paris.webp" as="image">
 </head>
@@ -113,14 +113,14 @@
                         <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
                     </li>
                     <li class="drop-item">
-                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement professionnel</a>
+                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement
+                            professionnel</a>
                     </li>
                     <li class="drop-item">
                         <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
                     </li>
                     <li class="drop-item">
-                        <a href="garde-du-corps.html"
-                            title="Garde du corps">Garde du corps</a>
+                        <a href="garde-du-corps.html" title="Garde du corps">Garde du corps</a>
                     </li>
                     <li class="drop-item">
                         <a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a>
@@ -234,93 +234,104 @@
     </div>
     <h2>NOS TARIFS ATTRACTIFS</h2>
     <div class="texte1">
-        <p>Profitez de nos tarifs avantageux pour vos trajets vers les aéroports, les rendez-vous d'affaires, les
-            visites touristiques ou tout autre déplacement. Avec MD VTC, vous bénéficiez d'un service de qualité à
-            un prix abordable, sans frais supplémentaires ni surprises.</p>
-        <p>Réservez dès aujourd'hui et découvrez pourquoi nos clients choisissent MD VTC pour leur transport privé !
-        </p>
+        <p>Bénéficiez de nos tarifs compétitifs pour vos transferts vers les aéroports, vos rendez-vous professionnels,
+            vos excursions touristiques ou tout autre déplacement. Avec MD VTC, profitez d’un service haut de gamme à un
+            prix transparent, sans frais cachés ni mauvaises surprises.</p>
+        <p>Réservez dès maintenant et découvrez pourquoi MD VTC est le choix privilégié de nos clients pour leurs
+            déplacements privés !</p>
     </div>
     <h2>NAVETTE AEROPORT PRIX</h2>
     <div class="p-slide">
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
-            <img src="classe-e-berline.webp" alt="prix navette aeroport">
-            Paris - Paris : <strong>80 €</strong> <br>
-            Paris - Aéroport (CDG - ORY - LBG) : <strong>130 €</strong> <br>
-            Orly - CDG : <strong>150 €</strong> <br>
-            Paris - Disneyland Paris : <strong>150 €</strong></p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+                <img src="classe-e-berline.webp" alt="prix navette aeroport">
+                Paris - Paris : <strong>80 €</strong> <br>
+                Paris - Aéroport (CDG - ORY - LBG) : <strong>130 €</strong> <br>
+                Orly - CDG : <strong>150 €</strong> <br>
+                Paris - Disneyland Paris : <strong>150 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
-            <img src="van.webp" alt="prix navette aeroport">
-            Paris - Paris : <strong>90 €</strong> <br>
-            Paris - Aéroport (CDG - ORY - LBG) : <strong>150 €</strong> <br>
-            Orly - CDG : <strong>170 €</strong> <br>
-            Paris - Disneyland Paris : <strong>170 €</strong></p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+                <img src="van.webp" alt="prix navette aeroport">
+                Paris - Paris : <strong>90 €</strong> <br>
+                Paris - Aéroport (CDG - ORY - LBG) : <strong>150 €</strong> <br>
+                Orly - CDG : <strong>170 €</strong> <br>
+                Paris - Disneyland Paris : <strong>170 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
-            <img src="mercedes-classe-s.webp" alt="prix navette aeroport">
-            Paris - Paris : <strong>120 €</strong> <br>
-            Paris - Aéroport (CDG - ORY - LBG) : <strong>170 €</strong> <br>
-            Orly - CDG : <strong>190 €</strong> <br>
-            Paris - Disneyland Paris : <strong>190 €</strong></p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+                <img src="mercedes-classe-s.webp" alt="prix navette aeroport">
+                Paris - Paris : <strong>120 €</strong> <br>
+                Paris - Aéroport (CDG - ORY - LBG) : <strong>170 €</strong> <br>
+                Orly - CDG : <strong>190 €</strong> <br>
+                Paris - Disneyland Paris : <strong>190 €</strong>
+            </p>
         </div>
     </div>
     <a class="bouton-3" href="tel:+33647851015" title="reserver uber taxi">CONTACTEZ - NOUS</a>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-slide">
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
-            <img src="classe-e-berline.webp" alt="vtc mise a disposition">
-            Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
-            Heures additionnelles : <strong>80 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+                <img src="classe-e-berline.webp" alt="vtc mise a disposition">
+                Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
+                Heures additionnelles : <strong>80 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
-            <img src="van.webp" alt="vtc mise a disposition">
-            Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
-            Heures additionnelles : <strong>90 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+                <img src="van.webp" alt="vtc mise a disposition">
+                Forfait 4 heures min (80km max) : <strong>360 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
+                Heures additionnelles : <strong>90 €</strong>
+            </p>
         </div>
-        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
-            <img src="mercedes-classe-s.webp" alt="vtc mise a disposition">
-            Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
-            Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
-            Heures additionnelles : <strong>120 €</strong> </p>
+        <div class="slide">
+            <p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+                <img src="mercedes-classe-s.webp" alt="vtc mise a disposition">
+                Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
+                Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
+                Heures additionnelles : <strong>120 €</strong>
+            </p>
         </div>
         <p>- Les tarifs incluent l’assurance des voyageurs transportés. <br>
             - Aucun frais de bagage supplémentaire. <br>
             - Parkings & Péages ne sont pas inclus dans les devis. <br>
             - Tous nos tarifs sont indiqués T.V.A 10% comprise pour les transferts. <br>
-            - Tous nos tarifs sont indiqués T.V.A 20% comprise pour les mises à disposition. En cas de planning déjà établi, la TVA passe à 10%. <br>
+            - Tous nos tarifs sont indiqués T.V.A 20% comprise pour les mises à disposition. En cas de planning déjà
+            établi, la TVA passe à 10%. <br>
             - Toute heure supplémentaire est facturée en fonction de la catégorie de véhicule choisi. <br>
             - Tout kilométrage supplémentaire : Classe E (2,75€/km), Classe V (3,50€/km) et Classe S (4,25€/km). <br>
-            - Passé une durée de 20 minutes d’attente, toute heure d’attente ou heure supplémentaire est facturée. <br><br>
-            - À SIGNALER À LA RESERVATION : Nos véhicules disposent, pour vos enfants, de sièges bébés et/ou de rehausseurs.
-           </p>
+            - Passé une durée de 20 minutes d’attente, toute heure d’attente ou heure supplémentaire est facturée.
+            <br><br>
+            - À SIGNALER À LA RESERVATION : Nos véhicules disposent, pour vos enfants, de sièges bébés et/ou de
+            rehausseurs.
+        </p>
     </div>
     <a class="bouton-3" href="tel:+33647851015" title="prix taxi cdg paris">CONTACTEZ - NOUS</a>
     <h2>COMMENT RESERVER UN CHAUFFEUR ?</h2>
     <div class="texte1">
-        <p>Avec <strong>MD VTC</strong>, la réservation de votre chauffeur est <strong>simple et
-                rapide</strong>. À l'aide du formulaire de contact, il vous suffit de sélectionner votre lieu de prise
-            en
-            charge, votre destination, et de
-            choisir la date et l'heure qui vous convient le mieux. Vous pouvez aussi directement nous appeler au <a
-                href="tel:+33647851015" title="md-vtc-chauffeur-prive"><strong>+336 47 85 10 15</strong></a>. Nous proposons un
-            véhicule
-            adaptés à <strong>vos
-                besoins</strong>, avec la possibilité d'ajouter des services supplémentaires gratuits tels que des
-            sièges pour enfants.</p>
-        <p>Une fois le formulaire envoyé, un de nos chauffeurs vous contactera le plus rapidement possible.</p>
-        <p>Notre équipe est également disponible pour toute assistance supplémentaire. Chez MD VTC, nous avons
-            défini la réservation de votre chauffeur aussi simple que possible pour vous offrir une expérience client
-            optimale.</p>
+        <p>Avec MD VTC, réservez votre chauffeur facilement et rapidement. Utilisez notre formulaire de contact pour
+            indiquer votre point de départ, votre destination, ainsi que la date et l'heure souhaitées. Vous pouvez
+            également nous contacter directement au +336 47 85 10 15. Nous mettons à disposition un véhicule adapté à
+            vos besoins, avec des services gratuits supplémentaires, comme des sièges pour enfants.</p>
+        <p>Après l'envoi du formulaire, l'un de nos chauffeurs vous rappellera dans les plus brefs délais.</p>
+        <p>Notre équipe reste à votre disposition pour toute assistance complémentaire. Chez MD VTC, nous avons
+            simplifié la réservation de votre chauffeur afin de vous garantir une expérience client optimale.</p>
     </div>
     <h2>PRIX CHAUFFEUR PRIVÉ PARIS</h2>
     <div class="texte1">
         <p><strong>Les tarifs</strong> des chauffeurs en Île-de-France peuvent varier en fonction de plusieurs facteurs,
             tels que la distance parcourue, le moment de la journée, le jour de la semaine, ainsi que
-            d'autres frais éventuels. <br><br> Chez <strong>MD VTC</strong>, nos tarifs sont fixés pour vous offrir une totale transparence : nous
-            appliquons un tarif de <strong>2,75€/km</strong> pour la Classe E, <strong>3,50€/km</strong> pour la Classe V, et <strong>4,25€/km</strong> pour la Classe S.
-            Les frais de parkings et péages ne sont pas inclus dans les devis. <br><br> Les heures supplémentaires sont facturées
+            d'autres frais éventuels. <br><br> Chez <strong>MD VTC</strong>, nos tarifs sont fixés pour vous offrir une
+            totale transparence : nous
+            appliquons un tarif de <strong>2,75€/km</strong> pour la Classe E, <strong>3,50€/km</strong> pour la Classe
+            V, et <strong>4,25€/km</strong> pour la Classe S.
+            Les frais de parkings et péages ne sont pas inclus dans les devis. <br><br> Les heures supplémentaires sont
+            facturées
             en fonction de la catégorie de véhicule choisie, et toute heure d'attente au-delà de 20 minutes est
             également facturée. Profitez d’une tarification claire et sans surprises avec MD VTC pour voyager en toute
             sérénité.</p>
@@ -430,7 +441,7 @@
         <h4>CONTACTEZ - NOUS</h4>
         <p class="liens">Tel : <a href="tel:+33647851015" target="_blank" title="tel">
                 +33647851015</a> <br><br>
-                <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" title="WhatsApp">WhatsApp</a> <br><br>
+            <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" title="WhatsApp">WhatsApp</a> <br><br>
             E-mail :<a href="mailto:mdvtc@orange.fr" target="_blank" title="email"> mdvtc@orange.fr</a>
         </p>
         <div class="liens-wp">
@@ -439,8 +450,8 @@
             </h5>
         </div>
     </div>
-    <div class="whats-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc" target="_blank"><img src="numero-vtc.webp"
-        alt="contact"></a></div>
+    <div class="whats-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc" target="_blank"><img
+                src="numero-vtc.webp" alt="contact"></a></div>
     <script>
         const list = document.querySelectorAll('.list');
         function activeLink() {
@@ -486,31 +497,31 @@
         });
     </script>
     <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.5
-                };
-                function observeStep(entry, observer) {
-                    entry.target.classList.add('slide-in-done');
-                    observer.unobserve(entry.target);
-                }
-                function createObserver(element) {
-                    var observer = new IntersectionObserver(function (entries) {
-                        entries.forEach(function (entry) {
-                            if (entry.isIntersecting) {
-                                observeStep(entry, observer);
-                            }
-                        });
-                    }, observerOptions);
-                    observer.observe(element);
-                }
-                var elements = document.querySelectorAll('.slide');
-                elements.forEach(function (element) {
-                    createObserver(element);
-                });
+        document.addEventListener('DOMContentLoaded', function () {
+            var observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+            function observeStep(entry, observer) {
+                entry.target.classList.add('slide-in-done');
+                observer.unobserve(entry.target);
+            }
+            function createObserver(element) {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            observeStep(entry, observer);
+                        }
+                    });
+                }, observerOptions);
+                observer.observe(element);
+            }
+            var elements = document.querySelectorAll('.slide');
+            elements.forEach(function (element) {
+                createObserver(element);
             });
+        });
     </script>
     <script>
         function validateForm() {
