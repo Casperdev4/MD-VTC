@@ -156,7 +156,7 @@ textarea {
   .lien-wp {margin-bottom: 0;}
   .reseau-md{text-align:center;margin-bottom:13%}.reseau-md a{font-size:15px;color:#fff}
   .whats-icon{display:flex;position:fixed;right:4%;bottom:3%;background-color: rgba(0, 0, 0, 0);}
-  .whats-icon img{display:block;width:60px;border-radius:20px;}
+  .whats-icon img{display:block;width:60px;height:61px;border-radius:20px;}
   .bouton-1 {
     padding: 2% 4% 2% 4%;
   }
