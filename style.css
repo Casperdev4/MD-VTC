@@ -29,7 +29,10 @@ h3{text-align:center;font-weight:350;color:#fff;font-size:18px;margin-top:3%}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 90%;
 }
 .background-image {
   position: absolute;
