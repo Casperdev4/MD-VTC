@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html"/>
+    <link rel="canonical" href="https://chauffeur-prive-paris-idf.fr/chauffeur-prive-paris-75.html" />
     <meta name="description"
         content="Chauffeur privé à Paris, service premium pour vos déplacements. Confort, discrétion et ponctualité assurés. Réservez votre trajet à Paris et en Île-de-France dès maintenant.">
     <link href="style.css" rel="stylesheet">
@@ -51,259 +51,274 @@
     }
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYVYYJI-3EiM9oFwuUGBXF7WuLikcTmq8&libraries=places"></script>
     <script>
-    function initAutocomplete() {
-        var departureInput = document.getElementById('departure1');
-        var arrivalInput = document.getElementById('arrival1');
-        var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
-            types: ['geocode']
-        });
-        var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
-            types: ['geocode']
-        });
-        autocompleteDeparture.addListener('place_changed', function() {
-            var place = autocompleteDeparture.getPlace();
-        });
-        autocompleteArrival.addListener('place_changed', function() {
-            var place = autocompleteArrival.getPlace();
-        });
-    }
+        function initAutocomplete() {
+            var departureInput = document.getElementById('departure1');
+            var arrivalInput = document.getElementById('arrival1');
+            var autocompleteDeparture = new google.maps.places.Autocomplete(departureInput, {
+                types: ['geocode']
+            });
+            var autocompleteArrival = new google.maps.places.Autocomplete(arrivalInput, {
+                types: ['geocode']
+            });
+            autocompleteDeparture.addListener('place_changed', function () {
+                var place = autocompleteDeparture.getPlace();
+            });
+            autocompleteArrival.addListener('place_changed', function () {
+                var place = autocompleteArrival.getPlace();
+            });
+        }
 
-    google.maps.event.addDomListener(window, 'load', initAutocomplete);
+        google.maps.event.addDomListener(window, 'load', initAutocomplete);
     </script>
     <link rel="preload" href="chauffeur-prive-paris.webp" as="image">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="https://chauffeur-prive-paris-idf.fr/" class="logo-link">
-            <img src="./logo/mdvtc.webp" alt="vtc paris" title="md vtc" class="logo" loading="lazy" decoding="async">
-        </a>
-        <label for="btn" class="icon">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="70" height="11"></rect>
-                <rect y="26" width="50" height="11"></rect>
-                <rect y="52" width="60" height="11"></rect>
-            </svg>
-        </label>
-        <input type="checkbox" id="btn">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="https://chauffeur-prive-paris-idf.fr/" title="chauffeur privé paris">ACCUEIL</a>
-            </li>
-            <li class="nav-item">
-                <label for="btn2" class="show">NOS PRESTATIONS +</label>
-                <input type="checkbox" id="btn2">
-                <ul class="dropdown">
-                    <li class="drop-item">
-                        <a href="chauffeur-prive-paris-75.html" title="chauffeur prive paris">Chauffeur privé</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="transfert-aeroport.html" title="commande un uber pour aller à l aéroport">Transfert
-                            Aéroport</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement professionnel</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="garde-du-corps.html"
-                            title="Garde du corps">Garde du corps</a>
-                    </li>
-                    <li class="drop-item">
-                        <a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="tarif-chauffeur-prive.html" title="prix uber">DEVIS / TARIFS</a>
-            </li>
-            <li class="nav-item">
-                <a href="tel:+33647851015" title="reservation uber">+336 47 85 10 15</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="img-index">
-        <img src="chauffeur-prive-paris.webp" alt="chauffeur prive paris" class="background-image">
-        <h1><i>Chauffeur Prive Paris - Navette aeroport - Chauffeur de Luxe</i></h1>
-        <a class="bouton-1" href="tarif-chauffeur-prive.html" title="chauffeur prive">RESERVATION</a>
-    </div>
-    <h2>CHAUFFEUR PRIVE</h2>
-    <div class="services-pc">
-        <img src="private-driver.webp" alt="vtc paris" title="transfert aeroport" loading="lazy" decoding="async">
-        <img src="voici-votre-chauffeur-prive-alternative-taxi-avec-une-elegante-mercedes-classe-e-paris.webp"
-            alt="vtc paris pas cher" title="chauffeur prive paris" loading="lazy" decoding="async">
-    </div>
-    <div class="services-mob">
-        <img src="deplacement-pro.webp" alt="taxi paris gare de lyon" title="transfert aeroport" loading="lazy"
-            decoding="async">
-    </div>
-    <div class="texte1">
-        <p>
-            Simplifiez vos déplacements professionnels avec notre service de chauffeur privé ! Nos chauffeurs
-            expérimentés vous assurent des trajets confortables et ponctuels pour tous vos rendez-vous d'affaires,
-            événements professionnels, conférences, et tout autres déplacements. <br><br> Que vous ayez besoin de vous
-            rendre à
-            une réunion importante, à un déjeuner d'affaires, ou à un séminaire, nous vous offrons une solution de
-            transport fiable et élégante. <br><br> Profitez d'un service sur mesure qui s'adapte à vos besoins, vous
-            permettant
-            de voyager en toute tranquillité et de vous concentrer sur l'essentiel. Réservez dès maintenant pour
-            bénéficier d'un service professionnel irréprochable et d'une expérience de voyage sans souci.
-        </p>
-    </div>
-    <h2>OPTIONS ENFANTS</h2>
-    <div class="services-pc">
-        <img src="siege-enfant.webp" alt="vtc paris pas cher" title="chauffeur prive paris" loading="lazy"
-            decoding="async">
-    </div>
-    <div class="services-mob">
-        <img src="siege-enfant.webp" alt="taxi paris gare de lyon" title="transfert aeroport" loading="lazy"
-            decoding="async">
-    </div>
-    <div class="texte1">
-        <p>
-            Pour garantir le confort et la sécurité de vos enfants lors de vos trajets, nous proposons en option des
-            rehausseurs et des sièges auto, disponibles gratuitement. Merci de nous en informer lors de votre
-            réservation pour que nous puissions préparer le matériel nécessaire à l'avance.
-        </p>
-    </div>
-    <a class="bouton-3" href="tel:+33647851015" title="vtc pas cher">CONTACT</a>
-    <h2>VTC PARIS TARIF</h2>
-    <div class="texte1">
-        <p><strong>Les tarifs</strong> des chauffeurs en Île-de-France peuvent varier en fonction de plusieurs facteurs,
-            tels que la distance parcourue, le moment de la journée, le jour de la semaine, ainsi que
-            d'autres frais éventuels. <br><br> Chez <strong>MD VTC</strong>, nos tarifs sont fixés pour vous offrir une
-            totale transparence : nous
-            appliquons un tarif de <strong>2,75€/km</strong> pour la Classe E, <strong>3,50€/km</strong> pour la Classe
-            V, et <strong>4,25€/km</strong> pour la Classe S.
-            Les frais de parkings et péages ne sont pas inclus dans les devis. <br><br> Les heures supplémentaires sont
-            facturées
-            en fonction de la catégorie de véhicule choisie, et toute heure d'attente au-delà de 20 minutes est
-            également facturée. Profitez d’une tarification claire et sans surprises avec MD VTC pour voyager en toute
-            sérénité.</p>
-    </div>
-    <h2>RESERVATION</h2>
-    <div class="form-container">
-        <div class="image-container">
-            <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
+    <header>
+        <nav class="navbar">
+            <a href="https://chauffeur-prive-paris-idf.fr/" class="logo-link">
+                <img src="./logo/mdvtc.webp" alt="vtc paris" title="md vtc" class="logo" loading="lazy"
+                    decoding="async">
+            </a>
+            <label for="btn" class="icon">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="70" height="11"></rect>
+                    <rect y="26" width="50" height="11"></rect>
+                    <rect y="52" width="60" height="11"></rect>
+                </svg>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://chauffeur-prive-paris-idf.fr/" title="chauffeur privé paris">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <label for="btn2" class="show">NOS PRESTATIONS +</label>
+                    <input type="checkbox" id="btn2">
+                    <ul class="dropdown">
+                        <li class="drop-item">
+                            <a href="chauffeur-prive-paris-75.html" title="chauffeur prive paris">Chauffeur privé</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="transfert-aeroport.html" title="commande un uber pour aller à l aéroport">Transfert
+                                Aéroport</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement
+                                professionnel</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="garde-du-corps.html" title="Garde du corps">Garde du corps</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="tarif-chauffeur-prive.html" title="prix uber">DEVIS / TARIFS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:+33647851015" title="reservation uber">+336 47 85 10 15</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="img-index">
+            <img src="chauffeur-prive-paris.webp" alt="chauffeur prive paris" class="background-image">
+            <h1><i>Chauffeur Prive Paris - Navette aeroport - Chauffeur de Luxe</i></h1>
+            <a class="bouton-1" href="tarif-chauffeur-prive.html" title="chauffeur prive">RESERVATION</a>
         </div>
-        <form action="traitement.php" method="post" onsubmit="return validateForm()">
-            <label for="name">Nom / Prénom</label>
-            <input type="text" id="name" name="nom" required>
-            <label for="phone">Téléphone</label>
-            <input type="tel" id="phone" name="telephone" required>
-            <label for="prestation">Prestation</label>
-            <select id="prestation" name="prestation">
-                <option value="Transfert aéroport">Transfert aéroport</option>
-                <option value="MAD">Mise à disposition</option>
-                <option value="Déplacement pro">Déplacement professionnel</option>
-                <option value="Trajet Privé">Trajet Privé</option>
-                <option value="Chauffeur Sec">Chauffeur Sec</option>
-                <option value="Mariage">Mariage</option>
-                <option value="Tourisme">Tourisme</option>
-                <option value="Bodyguard">Bodyguard</option>
-                <option value="Cinema">Cinéma</option>
-                <option value="Autre">Autre</option>
-            </select>
-            <label for="departure">Départ</label>
-            <input type="text" id="departure1" name="lieu_depart" required>
-            <label for="arrival">Arrivée</label>
-            <input type="text" id="arrival1" name="lieu_arrivee" required>
-            <label for="numero">Numéro de vol ou train</label>
-            <input type="text" id="numero" name="numero">
-            <div class="inline-container">
-                <div class="inline-item">
-                    <label for="date">Date</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <div class="inline-item">
-                    <label for="heure">Heure</label>
-                    <input type="time" id="heure" name="heure" required>
-                </div>
-            </div>
-            <div class="inline-container">
-                <div class="inline-item">
-                    <label for="passengers">Adultes</label>
-                    <select id="passengers" name="passagers">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-                <div class="inline-item">
-                    <label for="children">Enfants</label>
-                    <select id="children" name="enfants">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="inline-container">
-                <div class="inline-item">
-                    <label for="luggage">Bagages</label>
-                    <select id="luggage" name="bagages">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="inline-item">
-                    <label for="car-seats">Sièges auto</label>
-                    <select id="car-seats" name="sieges_auto">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="inline-item">
-                    <label for="rehausseur">Réhausseur</label>
-                    <select id="rehausseur" name="rehausseur">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-            </div>
-            <label for="comments">Commentaires</label>
-            <textarea id="comments" name="commentaires" rows="4"></textarea>
-            <button type="submit">ENVOYER</button>
-        </form>
-    </div>
-    <div id="contactez-nous">
-        <h4>NOS RÉSEAUX SOCIAUX</h4>
-        <div class="reseau-md">
-            <a href="https://fr.linkedin.com/" target="_blank" title="linkedin-assainissement"> Linkedin -</a>
-            <a href="https://www.instagram.com/" target="_blank" title="instagram-assainissement"> Instagram -</a>
-            <a href="https://www.snapchat.com/" target="_blank" title="snapchat-assainissement">Snapchat -</a>
-            <a href="https://www.facebook.com/" target="_blank" title="facebook-assainissement">Facebook</a>
+        <h2>CHAUFFEUR PRIVE</h2>
+        <div class="services-pc">
+            <img src="private-driver.webp" alt="vtc paris" title="transfert aeroport" loading="lazy" decoding="async">
+            <img src="voici-votre-chauffeur-prive-alternative-taxi-avec-une-elegante-mercedes-classe-e-paris.webp"
+                alt="vtc paris pas cher" title="chauffeur prive paris" loading="lazy" decoding="async">
         </div>
-        <h4>CONTACTEZ - NOUS</h4>
-        <p class="lien">Tel : <a href="tel:+33647851015" target="_blank" title="tel">
-                +33647851015</a> <br><br>
+        <div class="services-mob">
+            <img src="deplacement-pro.webp" alt="taxi paris gare de lyon" title="transfert aeroport" loading="lazy"
+                decoding="async">
+        </div>
+        <div class="texte1">
+            <p>
+                Simplifiez vos déplacements professionnels avec notre service de chauffeur privé ! Nos chauffeurs
+                expérimentés vous assurent des trajets confortables et ponctuels pour tous vos rendez-vous d'affaires,
+                événements professionnels, conférences, et tout autres déplacements. <br><br> Que vous ayez besoin de
+                vous
+                rendre à
+                une réunion importante, à un déjeuner d'affaires, ou à un séminaire, nous vous offrons une solution de
+                transport fiable et élégante. <br><br> Profitez d'un service sur mesure qui s'adapte à vos besoins, vous
+                permettant
+                de voyager en toute tranquillité et de vous concentrer sur l'essentiel. Réservez dès maintenant pour
+                bénéficier d'un service professionnel irréprochable et d'une expérience de voyage sans souci.
+            </p>
+        </div>
+        <h2>OPTIONS ENFANTS</h2>
+        <div class="services-pc">
+            <img src="siege-enfant.webp" alt="vtc paris pas cher" title="chauffeur prive paris" loading="lazy"
+                decoding="async">
+        </div>
+        <div class="services-mob">
+            <img src="siege-enfant.webp" alt="taxi paris gare de lyon" title="transfert aeroport" loading="lazy"
+                decoding="async">
+        </div>
+        <div class="texte1">
+            <p>
+                Pour garantir le confort et la sécurité de vos enfants lors de vos trajets, nous proposons en option des
+                rehausseurs et des sièges auto, disponibles gratuitement. Merci de nous en informer lors de votre
+                réservation pour que nous puissions préparer le matériel nécessaire à l'avance.
+            </p>
+        </div>
+        <a class="bouton-3" href="tel:+33647851015" title="vtc pas cher">CONTACT</a>
+        <h2>VTC PARIS TARIF</h2>
+        <div class="texte1">
+            <p><strong>Les tarifs</strong> des chauffeurs en Île-de-France peuvent varier en fonction de plusieurs
+                facteurs,
+                tels que la distance parcourue, le moment de la journée, le jour de la semaine, ainsi que
+                d'autres frais éventuels. <br><br> Chez <strong>MD VTC</strong>, nos tarifs sont fixés pour vous offrir
+                une
+                totale transparence : nous
+                appliquons un tarif de <strong>2,75€/km</strong> pour la Classe E, <strong>3,50€/km</strong> pour la
+                Classe
+                V, et <strong>4,25€/km</strong> pour la Classe S.
+                Les frais de parkings et péages ne sont pas inclus dans les devis. <br><br> Les heures supplémentaires
+                sont
+                facturées
+                en fonction de la catégorie de véhicule choisie, et toute heure d'attente au-delà de 20 minutes est
+                également facturée. Profitez d’une tarification claire et sans surprises avec MD VTC pour voyager en
+                toute
+                sérénité.</p>
+        </div>
+        <h2>RESERVATION</h2>
+        <div class="form-container">
+            <div class="image-container">
+                <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy"
+                    decoding="async">
+            </div>
+            <form action="traitement.php" method="post" onsubmit="return validateForm()">
+                <label for="name">Nom / Prénom</label>
+                <input type="text" id="name" name="nom" required>
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="telephone" required>
+                <label for="prestation">Prestation</label>
+                <select id="prestation" name="prestation">
+                    <option value="Transfert aéroport">Transfert aéroport</option>
+                    <option value="MAD">Mise à disposition</option>
+                    <option value="Déplacement pro">Déplacement professionnel</option>
+                    <option value="Trajet Privé">Trajet Privé</option>
+                    <option value="Chauffeur Sec">Chauffeur Sec</option>
+                    <option value="Mariage">Mariage</option>
+                    <option value="Tourisme">Tourisme</option>
+                    <option value="Bodyguard">Bodyguard</option>
+                    <option value="Cinema">Cinéma</option>
+                    <option value="Autre">Autre</option>
+                </select>
+                <label for="departure">Départ</label>
+                <input type="text" id="departure1" name="lieu_depart" required>
+                <label for="arrival">Arrivée</label>
+                <input type="text" id="arrival1" name="lieu_arrivee" required>
+                <label for="numero">Numéro de vol ou train</label>
+                <input type="text" id="numero" name="numero">
+                <div class="inline-container">
+                    <div class="inline-item">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="inline-item">
+                        <label for="heure">Heure</label>
+                        <input type="time" id="heure" name="heure" required>
+                    </div>
+                </div>
+                <div class="inline-container">
+                    <div class="inline-item">
+                        <label for="passengers">Adultes</label>
+                        <select id="passengers" name="passagers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="inline-item">
+                        <label for="children">Enfants</label>
+                        <select id="children" name="enfants">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inline-container">
+                    <div class="inline-item">
+                        <label for="luggage">Bagages</label>
+                        <select id="luggage" name="bagages">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="inline-item">
+                        <label for="car-seats">Sièges auto</label>
+                        <select id="car-seats" name="sieges_auto">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="inline-item">
+                        <label for="rehausseur">Réhausseur</label>
+                        <select id="rehausseur" name="rehausseur">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="comments">Commentaires</label>
+                <textarea id="comments" name="commentaires" rows="4"></textarea>
+                <button type="submit">ENVOYER</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="contactez-nous">
+            <h4>NOS RÉSEAUX SOCIAUX</h4>
+            <div class="reseau-md">
+                <a href="https://fr.linkedin.com/" target="_blank" title="linkedin-assainissement"> Linkedin -</a>
+                <a href="https://www.instagram.com/" target="_blank" title="instagram-assainissement"> Instagram -</a>
+                <a href="https://www.snapchat.com/" target="_blank" title="snapchat-assainissement">Snapchat -</a>
+                <a href="https://www.facebook.com/" target="_blank" title="facebook-assainissement">Facebook</a>
+            </div>
+            <h4>CONTACTEZ - NOUS</h4>
+            <p class="lien">Tel : <a href="tel:+33647851015" target="_blank" title="tel">
+                    +33647851015</a> <br><br>
                 <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" title="WhatsApp">WhatsApp</a> <br><br>
-            E-mail :<a href="mailto:mdvtc@orange.fr" target="_blank" title="email"> mdvtc@orange.fr</a>
-        </p>
-        <div class="lien-wp">
-            <h5>Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a> - <a
-                    href="mentions-legales.html" target="_blank">mentions légales</a>.
-            </h5>
+                E-mail :<a href="mailto:mdvtc@orange.fr" target="_blank" title="email"> mdvtc@orange.fr</a>
+            </p>
+            <div class="lien-wp">
+                <h5>Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a> - <a
+                        href="mentions-legales.html" target="_blank">mentions légales</a>.
+                </h5>
+            </div>
         </div>
-    </div>
-    <div class="whats-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc" target="_blank"><img src="numero-vtc.webp"
-                alt="contact"></a>
-    </div>
+        <div class="whats-icon"><a href="https://wa.me/message/5R6MVEKULLH3N1" title="reservation vtc"
+                target="_blank"><img src="numero-vtc.webp" alt="contact"></a>
+        </div>
+    </footer>
     <script>
         const list = document.querySelectorAll('.list');
         function activeLink() {
