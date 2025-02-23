@@ -439,6 +439,8 @@
                 <input type="text" id="name" name="nom" required>
                 <label for="phone">Téléphone</label>
                 <input type="tel" id="phone" name="telephone" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
                 <label for="prestation">Prestation</label>
                 <select id="prestation" name="prestation">
                     <option value="Transfert aéroport">Transfert aéroport</option>
@@ -449,7 +451,7 @@
                     <option value="Mariage">Mariage</option>
                     <option value="Tourisme">Tourisme</option>
                     <option value="Bodyguard">Bodyguard</option>
-                    <option value="Cinema">Cinéma</option>
+
                     <option value="Autre">Autre</option>
                 </select>
                 <label for="departure">Départ</label>
@@ -522,60 +524,6 @@
                 <button type="submit">ENVOYER</button>
             </form>
         </div>
-        <div class="form-container">
-            <div class="image-container">
-                <img src="./logo/img-form.webp" alt="md vtc Chauffeur privé Paris" title="md vtc" loading="lazy" decoding="async">
-            </div>
-            <form action="traitement.php" method="post" onsubmit="return validateForm()">
-                <label for="name">Nom / Prénom</label>
-                <input type="text" id="name" name="nom" required>
-        
-                <label for="phone">Téléphone</label>
-                <input type="tel" id="phone" name="telephone" required>
-        
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="prestation">Prestation</label>
-                <select id="prestation" name="prestation">
-                    <option value="Transfert aéroport">Transfert aéroport</option>
-                    <option value="MAD">Mise à disposition</option>
-                    <option value="Déplacement pro">Déplacement professionnel</option>
-                    <option value="Trajet Privé">Trajet Privé</option>
-                    <option value="Chauffeur Sec">Chauffeur Sec</option>
-                    <option value="Mariage">Mariage</option>
-                    <option value="Tourisme">Tourisme</option>
-                    <option value="Bodyguard">Bodyguard</option>
-                    <option value="Autre">Autre</option>
-                </select>
-        
-                <label for="departure">Départ</label>
-                <input type="text" id="departure1" name="lieu_depart" required>
-        
-                <label for="arrival">Arrivée</label>
-                <input type="text" id="arrival1" name="lieu_arrivee" required>
-        
-                <label for="numero">Numéro de vol ou train</label>
-                <input type="text" id="numero" name="numero">
-        
-                <div class="inline-container">
-                    <div class="inline-item">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="inline-item">
-                        <label for="heure">Heure</label>
-                        <input type="time" id="heure" name="heure" required>
-                    </div>
-                </div>
-        
-                <label for="comments">Commentaires</label>
-                <textarea id="comments" name="commentaires" rows="4"></textarea>
-        
-                <button type="submit">ENVOYER</button>
-            </form>
-        </div>
-        
     </main>
     <footer>
         <div id="contactez-nous">
