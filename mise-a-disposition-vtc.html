@@ -350,6 +350,7 @@
         function validateForm() {
             var nom = document.getElementById("name").value.trim();
             var telephone = document.getElementById("phone").value.trim();
+            var email = document.getElementById("email").value.trim();
             var prestation = document.getElementById("prestation").value.trim();
             var lieu_depart = document.getElementById("departure1").value.trim();
             var lieu_arrivee = document.getElementById("arrival1").value.trim();
@@ -361,21 +362,31 @@
             var sieges_auto = document.getElementById("car-seats").value.trim();
             var rehausseur = document.getElementById("rehausseur").value.trim();
             var commentaires = document.getElementById("comments").value.trim();
-            if (nom === "" || telephone === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
-                alert("Champs obligatoires.");
+    
+            if (nom === "" || telephone === "" || email === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
+                alert("Tous les champs obligatoires doivent être remplis.");
                 return false;
             }
+    
             var telPattern = /^(06|07|\+336|\+337)\d{8}$/;
             if (!telPattern.test(telephone)) {
                 alert("Veuillez entrer un numéro de téléphone valide.");
                 return false;
             }
+    
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Veuillez entrer une adresse email valide.");
+                return false;
+            }
+    
             var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
             var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
             if (linkPattern.test(commentaires) || scriptPattern.test(commentaires)) {
-                alert("Pas autorisés.");
+                alert("Les liens et scripts ne sont pas autorisés dans les commentaires.");
                 return false;
             }
+    
             return true;
         }
     </script>

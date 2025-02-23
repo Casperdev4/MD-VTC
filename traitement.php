@@ -64,6 +64,13 @@ $message .= "EMAIL : $email\n";
 $message .= "PRESTATION : $prestation\n";
 $message .= "DÉPART : $depart\n";
 $message .= "ARRIVÉE : $arrive\n";
+$message .= "DATE : $date\n";
+$message .= "HEURE : $heure\n";
+$message .= "ADULTES : $passagers\n";
+$message .= "ENFANTS : $enfants\n";
+$message .= "BAGAGES : $bagages\n";
+$message .= "SIEGE AUTO : $sieges_auto\n";
+$message .= "REHAUSSEUR : $rehausseur\n";
 $message .= "COMMENTAIRES : $commentaires\n";
 
 $mail = new PHPMailer(true);
@@ -91,7 +98,6 @@ try {
         die("Erreur d'envoi de l'email d'administration : " . $mail->ErrorInfo);
     }
 
-    // Mail de confirmation au client
     $mailClient = new PHPMailer(true);
     $mailClient->isSMTP();
     $mailClient->Host = 'smtp.ionos.fr';
@@ -100,7 +106,7 @@ try {
     $mailClient->Password = 'Allamlyly912!';
     $mailClient->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mailClient->Port = 465;
-    $mailClient->SMTPDebug = 0; // Désactiver le mode debug
+    $mailClient->SMTPDebug = 0;
 
     $mailClient->setFrom('contact@webprime.fr', 'MD-VTC');
     $mailClient->addAddress($email);
