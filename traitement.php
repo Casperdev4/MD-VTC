@@ -63,7 +63,7 @@ if (!est_email_valide($email)) {
 }
 
 if (contient_liens($commentaires)) {
-    die("Les liens ne sont pas autorisés dans les commentaires.");
+    die("Pas autorisé.");
 }
 
 $message = "NOM : $nom\n";
@@ -98,7 +98,7 @@ try {
 
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
-    $mail->Subject = 'Nouveau formulaire reçu';
+    $mail->Subject = 'Formulaire';
     $mail->Body = nl2br($message);
     $mail->AltBody = $message;
 
