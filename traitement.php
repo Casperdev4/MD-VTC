@@ -1,4 +1,6 @@
 <?php
+ob_start(); // Démarrer la mise en mémoire tampon pour éviter l'affichage de texte
+
 header('Content-Type: text/html; charset=UTF-8');
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -8,6 +10,11 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
+
+// Vérifier que la requête est bien en POST
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    die("Accès non autorisé !");
+}
 
 function est_numero_valide($numero) {
     return preg_match('/^(06|07|\+336|\+337)\d{8}$/', $numero);
@@ -68,7 +75,7 @@ try {
     $mail->Password = 'Allamlyly912!';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->SMTPDebug = 0; // Désactiver le mode debug
 
     $mail->setFrom('contact@webprime.fr', 'MD-VTC');
     $mail->addAddress('mdvtc@orange.fr');
@@ -84,6 +91,7 @@ try {
         die("Erreur d'envoi de l'email d'administration : " . $mail->ErrorInfo);
     }
 
+    // Mail de confirmation au client
     $mailClient = new PHPMailer(true);
     $mailClient->isSMTP();
     $mailClient->Host = 'smtp.ionos.fr';
@@ -92,6 +100,7 @@ try {
     $mailClient->Password = 'Allamlyly912!';
     $mailClient->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mailClient->Port = 465;
+    $mailClient->SMTPDebug = 0; // Désactiver le mode debug
 
     $mailClient->setFrom('contact@webprime.fr', 'MD-VTC');
     $mailClient->addAddress($email);
@@ -110,6 +119,10 @@ try {
 } catch (Exception $e) {
     die("Message non envoyé. Erreur : " . $mail->ErrorInfo);
 }
+
+ob_end_flush();
+?>
+
 
 
 
