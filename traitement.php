@@ -40,6 +40,14 @@ $email = htmlspecialchars($_POST['email'] ?? '', ENT_QUOTES, 'UTF-8');
 $prestation = htmlspecialchars($_POST['prestation'] ?? '', ENT_QUOTES, 'UTF-8');
 $depart = htmlspecialchars($_POST['lieu_depart'] ?? '', ENT_QUOTES, 'UTF-8');
 $arrive = htmlspecialchars($_POST['lieu_arrivee'] ?? '', ENT_QUOTES, 'UTF-8');
+$numero = htmlspecialchars($_POST['numero'] ?? '', ENT_QUOTES, 'UTF-8');
+$date = htmlspecialchars($_POST['date'] ?? '', ENT_QUOTES, 'UTF-8');
+$heure = htmlspecialchars($_POST['heure'] ?? '', ENT_QUOTES, 'UTF-8');
+$passagers = htmlspecialchars($_POST['passagers'] ?? '', ENT_QUOTES, 'UTF-8');
+$enfants = htmlspecialchars($_POST['enfants'] ?? '', ENT_QUOTES, 'UTF-8');
+$bagages = htmlspecialchars($_POST['bagages'] ?? '', ENT_QUOTES, 'UTF-8');
+$sieges_auto = htmlspecialchars($_POST['sieges_auto'] ?? '', ENT_QUOTES, 'UTF-8');
+$rehausseur = htmlspecialchars($_POST['rehausseur'] ?? '', ENT_QUOTES, 'UTF-8');
 $commentaires = htmlspecialchars($_POST['commentaires'] ?? '', ENT_QUOTES, 'UTF-8');
 
 if (est_vide($nom) || est_vide($telephone) || est_vide($email) || est_vide($prestation) || est_vide($depart) || est_vide($arrive)) {
@@ -82,7 +90,7 @@ try {
     $mail->Password = 'Allamlyly912!';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
-    $mail->SMTPDebug = 0; // Désactiver le mode debug
+    $mail->SMTPDebug = 0;
 
     $mail->setFrom('contact@webprime.fr', 'MD-VTC');
     $mail->addAddress('mdvtc@orange.fr');
