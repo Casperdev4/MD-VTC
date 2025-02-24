@@ -93,7 +93,7 @@ try {
     $mail->SMTPDebug = 0;
 
     $mail->setFrom('contact@webprime.fr', 'MD-VTC');
-    $mail->addAddress('mdvtc@orange.fr');
+    $mail->addAddress('contact.mdvtc.privatedriver@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
 
     $mail->CharSet = 'UTF-8';
