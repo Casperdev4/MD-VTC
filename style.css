@@ -39,7 +39,7 @@ textarea{width:94%;padding:8px;margin-bottom:15px;border:1px solid #ccc;border-r
 .image-container img{width:30%;height:auto;border-radius:20px}
 .inline-container{display:flex;justify-content:space-between;width:100%}
 .inline-item{display:flex;flex-direction:column;width:48%}
-.service-prive img{width:75%;height:280px;margin-bottom:5%}
+.service-prive img{width:70%;height:280px;margin-bottom:5%}
 .service-prive{margin-top:5%;margin-bottom:5%;display:flex;justify-content:center}
 .services-pc{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:10%}
 .services-pc img{width:30%;height:240px;border-radius:20px}
