@@ -94,7 +94,7 @@ try {
 
     $mail->setFrom('contact@webprime.fr', 'MD-VTC');
     $mail->addAddress('contact.mdvtc.privatedriver@gmail.com');
-    $mail->addAddress('webprime91@hotmail.com');
+    $mail->addAddress('lennygui91@hotmail.com');
 
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
