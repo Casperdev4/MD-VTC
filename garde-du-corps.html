@@ -234,12 +234,14 @@
             <a class="bouton-3" href="tel:+33647851015" title="prix garde du corps">CONTACT</a>
         </section>
         <h2>RESERVATION</h2>
-      <div class="form-container">
+        <div class="form-container">
             <div class="image-container">
-                <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy"
-                    decoding="async">
+                <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
             </div>
-            <form action="traitement.php" method="post" onsubmit="return validateForm()">
+            <form action="https://formsubmit.co/webprime91@hotmail.com" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
+                <input type="hidden" name="_cc" value="contact.mdvtc.privatedriver@gmail.com">
                 <label for="name">Nom / Prénom</label>
                 <input type="text" id="name" name="nom" required>
                 <label for="phone">Téléphone</label>
