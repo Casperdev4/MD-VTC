@@ -269,6 +269,11 @@
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
             </div>
             <form action="https://formsubmit.co/webprime91@hotmail.com" method="POST" onsubmit="return validateForm()">
+                <!-- Honeypot anti-spam -->
+                <div class="hp-wrap">
+                    <label for="website">Votre site web :</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
                 <input type="hidden" name="_cc" value="contact.mdvtc.privatedriver@gmail.com">
