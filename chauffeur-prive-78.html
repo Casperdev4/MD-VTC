@@ -453,6 +453,9 @@
                     decoding="async">
             </div>
             <form action="traitement.php" method="post" onsubmit="return validateForm()">
+                <input type="hidden" name="_from" value="MD VTC">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_template" value="table">
                 <label for="name">Nom / Prénom</label>
                 <input type="text" id="name" name="nom" required>
                 <label for="phone">Téléphone</label>
