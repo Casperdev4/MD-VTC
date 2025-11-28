@@ -448,15 +448,29 @@
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive 95 Val-d'Oise" title="md vtc 95 Val-d'Oise" loading="lazy"
                     decoding="async">
             </div>
-            <form action="traitement.php" method="post" onsubmit="return validateForm()">
+            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+                <!-- Honeypot anti-spam -->
+                <div class="hp-wrap">
+                    <label for="website">Votre site web :</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
+                <input type="hidden" name="_cc" value="contact.mdvtc.privatedriver@gmail.com">
+                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
                 <input type="hidden" name="_from" value="MD VTC">
                 <input type="hidden" name="_subject" value="Formulaire">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
                 <label for="name">Nom / Prénom</label>
                 <input type="text" id="name" name="nom" required>
+
                 <label for="tel">Téléphone :</label>
                 <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
                 <label for="prestation">Prestation</label>
                 <select id="prestation" name="prestation">
                     <option value="Transfert aéroport">Transfert aéroport</option>
@@ -469,12 +483,16 @@
                     <option value="Bodyguard">Bodyguard</option>
                     <option value="Autre">Autre</option>
                 </select>
+
                 <label for="departure1">Départ</label>
                 <input type="text" id="departure1" name="lieu_depart" required>
+
                 <label for="arrival1">Arrivée</label>
                 <input type="text" id="arrival1" name="lieu_arrivee" required>
+
                 <label for="numero">Numéro de vol ou train</label>
                 <input type="text" id="numero" name="numero">
+
                 <div class="inline-container">
                     <div class="inline-item">
                         <label for="date">Date</label>
@@ -485,6 +503,7 @@
                         <input type="time" id="heure" name="heure" required>
                     </div>
                 </div>
+
                 <div class="inline-container">
                     <div class="inline-item">
                         <label for="passengers">Adultes</label>
@@ -505,6 +524,7 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="inline-container">
                     <div class="inline-item">
                         <label for="luggage">Bagages</label>
@@ -534,8 +554,10 @@
                         </select>
                     </div>
                 </div>
+
                 <label for="comments">Commentaires</label>
                 <textarea id="comments" name="commentaires" rows="4"></textarea>
+
                 <button type="submit">ENVOYER</button>
             </form>
         </div>
