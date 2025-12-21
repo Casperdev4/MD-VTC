@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File update-forms.ps1)",
+      "Bash(for file in transfert-aeroport.html mise-a-disposition-vtc.html location-chauffeur-sans-voiture.html garde-du-corps.html deplacements-professionnels.html chauffeur-prive-paris-75.html chauffeur-prive-95.html chauffeur-prive-93.html chauffeur-prive-78.html chauffeur-mariage.html)",
+      "Bash(do sed -i 's/<input type=\"\"hidden\"\" name=\"\"_captcha\"\" value=\"\"true\"\">                <label/<input type=\"\"hidden\"\" name=\"\"_captcha\"\" value=\"\"true\"\">\\\\n                <label/g' \"$file\")",
+      "Bash(done)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File fix-accents.ps1)",
+      "Bash(ls:*)"
+    ]
+  }
+}

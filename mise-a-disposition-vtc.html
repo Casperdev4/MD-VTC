@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -246,24 +246,17 @@
             <div class="image-container">
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
-                <input type="hidden" name="_cc" value="contact.mdvtc.privatedriver@gmail.com">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-                <input type="hidden" name="_from" value="MD VTC">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-                <label for="name">Nom / Prénom</label>
+                <label for="name">Nom / Prenom</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
+                <label for="tel">Telephone :</label>
                 <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
 
                 <label for="email">Email</label>
@@ -271,10 +264,10 @@
 
                 <label for="prestation">Prestation</label>
                 <select id="prestation" name="prestation">
-                    <option value="Transfert aéroport">Transfert aéroport</option>
-                    <option value="MAD">Mise à disposition</option>
-                    <option value="Déplacement pro">Déplacement professionnel</option>
-                    <option value="Trajet Privé">Trajet Privé</option>
+                    <option value="Transfert aeroport">Transfert aeroport</option>
+                    <option value="MAD">Mise a disposition</option>
+                    <option value="Deplacement pro">Deplacement professionnel</option>
+                    <option value="Trajet Prive">Trajet Prive</option>
                     <option value="Chauffeur Sec">Chauffeur Sec</option>
                     <option value="Mariage">Mariage</option>
                     <option value="Tourisme">Tourisme</option>
@@ -282,13 +275,13 @@
                     <option value="Autre">Autre</option>
                 </select>
 
-                <label for="departure1">Départ</label>
+                <label for="departure1">Depart</label>
                 <input type="text" id="departure1" name="lieu_depart" required>
 
-                <label for="arrival1">Arrivée</label>
+                <label for="arrival1">Arrivee</label>
                 <input type="text" id="arrival1" name="lieu_arrivee" required>
 
-                <label for="numero">Numéro de vol ou train</label>
+                <label for="numero">Numero de vol ou train</label>
                 <input type="text" id="numero" name="numero">
 
                 <div class="inline-container">
@@ -334,7 +327,7 @@
                         </select>
                     </div>
                     <div class="inline-item">
-                        <label for="car-seats">Sièges auto</label>
+                        <label for="car-seats">Sieges auto</label>
                         <select id="car-seats" name="sieges_auto">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -343,7 +336,7 @@
                         </select>
                     </div>
                     <div class="inline-item">
-                        <label for="rehausseur">Réhausseur</label>
+                        <label for="rehausseur">Rehausseur</label>
                         <select id="rehausseur" name="rehausseur">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -433,48 +426,40 @@
             });
         });
     </script>
-    <script>
-        function validateForm() {
-            var nom = document.getElementById("name").value.trim();
-            var telephone = document.getElementById("phone").value.trim();
-            var email = document.getElementById("email").value.trim();
-            var prestation = document.getElementById("prestation").value.trim();
-            var lieu_depart = document.getElementById("departure1").value.trim();
-            var lieu_arrivee = document.getElementById("arrival1").value.trim();
-            var date = document.getElementById("date").value.trim();
-            var heure = document.getElementById("heure").value.trim();
-            var passagers = document.getElementById("passengers").value.trim();
-            var enfants = document.getElementById("children").value.trim();
-            var bagages = document.getElementById("luggage").value.trim();
-            var sieges_auto = document.getElementById("car-seats").value.trim();
-            var rehausseur = document.getElementById("rehausseur").value.trim();
-            var commentaires = document.getElementById("comments").value.trim();
-    
-            if (nom === "" || telephone === "" || email === "" || prestation === "" || lieu_depart === "" || lieu_arrivee === "" || date === "" || heure === "" || passagers === "") {
-                alert("Tous les champs obligatoires doivent être remplis.");
-                return false;
+        <script>
+        async function submitToWebPrime(e) {
+            e.preventDefault();
+            var form = e.target;
+            var btn = form.querySelector('button[type="submit"]');
+            var originalText = btn.textContent;
+
+            // Anti-spam honeypot check
+            var honeypot = form.querySelector('input[name="_gotcha"]');
+            if (honeypot && honeypot.value) return false;
+
+            btn.textContent = 'Envoi en cours...';
+            btn.disabled = true;
+
+            try {
+                var formData = new FormData(form);
+                var response = await fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    window.location.href = 'https://chauffeur-prive-paris-idf.fr/';
+                } else {
+                    alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                alert('Erreur de connexion. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-    
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(telephone)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-    
-            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (!emailPattern.test(email)) {
-                alert("Veuillez entrer une adresse email valide.");
-                return false;
-            }
-    
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(commentaires) || scriptPattern.test(commentaires)) {
-                alert("Les liens et scripts ne sont pas autorisés dans les commentaires.");
-                return false;
-            }
-    
-            return true;
+            return false;
         }
     </script>
 </body>
