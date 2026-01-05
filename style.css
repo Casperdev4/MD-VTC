@@ -133,3 +133,22 @@ form{width:85%}
 .gaga img{width:30%;height:120px}
 .avantages-taxi,.nos-vehicules-pc,.presta1,.presta2,.services-pc,.gaga{display:none}
 }
+
+/* FAQ Section */
+.faq-section{width:90%;max-width:900px;margin:5% auto;padding:2%}
+.faq-section h2{color:#5890ff;text-align:center;margin-bottom:5%}
+.faq-item{background-color:#111;border:1px solid #333;border-radius:10px;margin-bottom:15px;overflow:hidden}
+.faq-item input[type="checkbox"]{display:none}
+.faq-item label{display:flex;justify-content:space-between;align-items:center;padding:20px;cursor:pointer;color:#fff;font-size:16px;font-weight:500;transition:background-color 0.3s}
+.faq-item label:hover{background-color:#222}
+.faq-item label::after{content:'+';font-size:24px;color:#5890ff;transition:transform 0.3s}
+.faq-item input[type="checkbox"]:checked + label::after{transform:rotate(45deg)}
+.faq-item input[type="checkbox"]:checked + label{background-color:#222}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease-out,padding 0.4s ease-out;background-color:#1a1a1a}
+.faq-item input[type="checkbox"]:checked ~ .faq-answer{max-height:500px;padding:20px}
+.faq-answer p{margin:0;color:#ccc;font-size:15px;line-height:1.7;text-align:left;background-color:transparent;padding:0}
+@media screen and (max-width:767.98px){
+.faq-section{width:95%;padding:3%}
+.faq-item label{font-size:14px;padding:15px}
+.faq-answer p{font-size:14px}
+}
