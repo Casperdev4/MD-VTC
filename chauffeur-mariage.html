@@ -136,54 +136,35 @@
     <header>
         <nav class="navbar">
             <a href="https://chauffeur-prive-paris-idf.fr/" class="logo-link">
-                <img src="./logo/mdvtc.webp" alt="vtc paris" title="md vtc" class="logo" loading="lazy"
-                    decoding="async">
+                <img src="./logo/mdvtc.webp" alt="vtc paris" title="md vtc" class="logo" loading="lazy" decoding="async">
             </a>
-            <label for="btn" class="icon">
-                <svg viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="70" height="11"></rect>
-                    <rect y="26" width="50" height="11"></rect>
-                    <rect y="52" width="60" height="11"></rect>
-                </svg>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
-            <input type="checkbox" id="btn">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="https://chauffeur-prive-paris-idf.fr/" title="chauffeur privé paris">ACCUEIL</a>
+                    <a href="https://chauffeur-prive-paris-idf.fr/" title="chauffeur prive paris">ACCUEIL</a>
                 </li>
-                <li class="nav-item">
-                    <label for="btn2" class="show">NOS PRESTATIONS +</label>
-                    <input type="checkbox" id="btn2">
+                <li class="nav-item has-dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropdown-label">NOS PRESTATIONS <span class="arrow"></span></label>
                     <ul class="dropdown">
-                        <li class="drop-item">
-                            <a href="chauffeur-prive-paris-75.html" title="chauffeur prive paris">Chauffeur privé</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="transfert-aeroport.html" title="commande un uber pour aller à l aéroport">Transfert
-                                Aéroport</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise à Disposition</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="deplacements-professionnels.html" title="chauffeur de luxe">Déplacement
-                                professionnel</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="location-chauffeur-sans-voiture.html" title="chauffeur de luxe">Chauffeur Sec</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="garde-du-corps.html" title="Garde du corps">Garde du corps</a>
-                        </li>
-                        <li class="drop-item">
-                            <a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a>
-                        </li>
+                        <li><a href="chauffeur-prive-paris-75.html" title="chauffeur prive paris">Chauffeur prive</a></li>
+                        <li><a href="transfert-aeroport.html" title="transfert aeroport">Transfert Aeroport</a></li>
+                        <li><a href="mise-a-disposition-vtc.html" title="vtc mise a disposition">Mise a Disposition</a></li>
+                        <li><a href="deplacements-professionnels.html" title="chauffeur de luxe">Deplacement professionnel</a></li>
+                        <li><a href="location-chauffeur-sans-voiture.html" title="chauffeur sec">Chauffeur Sec</a></li>
+                        <li><a href="garde-du-corps.html" title="Garde du corps">Garde du corps</a></li>
+                        <li><a href="chauffeur-mariage.html" title="location voiture mariage avec chauffeur">Mariage</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="tarif-chauffeur-prive.html" title="prix uber">DEVIS / TARIFS</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-cta">
                     <a href="tel:+33647851015" title="reservation uber">+336 47 85 10 15</a>
                 </li>
             </ul>
@@ -464,13 +445,9 @@
             item.addEventListener('mouseover', activeLink));
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var menuToggle = document.getElementById("btn");
-            var navLinks = document.querySelectorAll(".nav-menu a");
-            navLinks.forEach(function (link) {
-                link.addEventListener("click", function () {
-                    menuToggle.checked = false;
-                });
+        document.querySelectorAll('.nav-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('nav-toggle').checked = false;
             });
         });
     </script>
