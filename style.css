@@ -10,7 +10,6 @@ p{font-size:18px;margin:5%;text-align:center;background-color:#000;padding:2%}
 .texte1,.p-slide{line-height:1.8}
 h2{color:#5890ff;margin:7% 3% 5%;font-size:30px;}
 h3{text-align:center;font-weight:350;color:#fff;font-size:17px;margin-top:3%}
-/* Navbar */
 .navbar{display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;left:0;right:0;z-index:1000;height:80px;padding:0 5%;background:linear-gradient(180deg,rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.85) 100%);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .logo{height:60px;width:auto;transition:transform 0.3s ease}
 .logo:hover{transform:scale(1.05)}
@@ -89,7 +88,6 @@ textarea{width:94%;padding:8px;margin-bottom:15px;border:1px solid #ccc;border-r
     pointer-events: none;
 }
 
-/* Breakpoint Grand Ecran */
 @media screen and (min-width:1400px) {
 .img-index{max-width:1600px}
 .form-container{width:clamp(500px, 45%, 650px)}
@@ -100,7 +98,6 @@ p{max-width:1200px;margin-left:auto;margin-right:auto}
 .texte1 p{font-size:19px}
 }
 
-/* Breakpoint Tablette */
 @media screen and (min-width:768px) and (max-width:1024px) {
 body{margin-top:90px}
 h1{font-size:32px}
@@ -132,7 +129,6 @@ h3{font-size:18px}
 h4{font-size:19px;margin-left:3%;margin-bottom:5%;margin-right:3%}
 p{font-size:19px;margin:5%;text-align:center;padding:2%;word-spacing:4px}
 .texte1,.p-slide,p{line-height:1.5}
-/* Navbar Mobile */
 .navbar{height:70px;padding:0 15px}
 .logo{height:50px}
 .nav-burger{display:flex}
@@ -182,7 +178,6 @@ form{width:85%}
 .avantages-taxi,.nos-vehicules-pc,.presta1,.presta2,.services-pc{display:none}
 }
 
-/* FAQ Section */
 .faq-section{width:90%;max-width:900px;margin:5% auto;padding:2%}
 .faq-section h2{color:#5890ff;text-align:center;margin-bottom:5%}
 .faq-item{background-color:#111;border:1px solid #333;border-radius:10px;margin-bottom:15px;overflow:hidden}
