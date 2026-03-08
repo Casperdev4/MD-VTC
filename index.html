@@ -233,13 +233,16 @@
             <div class="image-container">
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
             </div>
-            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
+            <form id="contactForm" action="https://formsubmit.co/mdvtc@orange.fr" method="POST" onsubmit="return sendBoth(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="_gotcha" autocomplete="off">
+                    <input type="text" id="website" name="_honey" autocomplete="off">
                 </div>
-                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
 
                 <label for="name">Nom / Prenom</label>
                 <input type="text" id="name" name="nom" required>
@@ -653,9 +656,12 @@
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website2">Votre site web :</label>
-                    <input type="text" id="website2" name="_gotcha" autocomplete="off">
+                    <input type="text" id="website2" name="_honey" autocomplete="off">
                 </div>
-                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
 
                 <label for="name2">Nom / Prenom</label>
                 <input type="text" id="name2" name="nom" required>
@@ -828,38 +834,20 @@
         });
     </script>
     <script>
-    async function submitToWebPrime(e) {
+    function sendBoth(e) {
         e.preventDefault();
-        var form = e.target;
+        var form = document.getElementById('contactForm');
         var btn = form.querySelector('button[type="submit"]');
-        var originalText = btn.textContent;
-
-        // Anti-spam honeypot check
-        var honeypot = form.querySelector('input[name="_gotcha"]');
-        if (honeypot && honeypot.value) return false;
-
+        var honeyField = form.querySelector('[name="_honey"]');
+        if (honeyField && honeyField.value) return false;
         btn.textContent = 'Envoi en cours...';
         btn.disabled = true;
-
-        try {
-            var formData = new FormData(form);
-            var response = await fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                window.location.href = 'https://chauffeur-prive-paris-idf.fr/';
-            } else {
-                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
-                btn.textContent = originalText;
-                btn.disabled = false;
-            }
-        } catch (error) {
-            alert('Erreur de connexion. Veuillez reessayer.');
-            btn.textContent = originalText;
-            btn.disabled = false;
-        }
+        var formData = new FormData(form);
+        fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
+            method: 'POST',
+            body: formData
+        }).catch(function() {});
+        form.submit();
         return false;
     }
     </script>

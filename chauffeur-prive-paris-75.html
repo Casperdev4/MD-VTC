@@ -298,13 +298,16 @@
             <div class="image-container">
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive Paris" title="md vtc" loading="lazy" decoding="async">
             </div>
-            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
+            <form id="contactForm" action="https://formsubmit.co/mdvtc@orange.fr" method="POST" onsubmit="return sendBoth(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="_gotcha" autocomplete="off">
+                    <input type="text" id="website" name="_honey" autocomplete="off">
                 </div>
-                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
                 <label for="name">Nom / Prenom</label>
                 <input type="text" id="name" name="nom" required>
 
@@ -493,7 +496,7 @@
             var originalText = btn.textContent;
 
             // Anti-spam honeypot check
-            var honeypot = form.querySelector('input[name="_gotcha"]');
+            var honeypot = form.querySelector('input[name="_honey"]');
             if (honeypot && honeypot.value) return false;
 
             btn.textContent = 'Envoi en cours...';

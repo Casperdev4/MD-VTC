@@ -12,7 +12,8 @@
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAjout des sections FAQ sur toutes les pages\n\n- Ajout du CSS pour les FAQ accordion \\(style.css\\)\n- FAQ ajoutées sur index.html \\(services généraux\\)\n- FAQ ajoutées sur tarif-chauffeur-prive.html \\(tarification\\)\n- FAQ ajoutées sur les pages de services:\n  - transfert-aeroport.html\n  - mise-a-disposition-vtc.html\n  - deplacements-professionnels.html\n  - location-chauffeur-sans-voiture.html\n  - garde-du-corps.html\n  - chauffeur-mariage.html\n- FAQ ajoutées sur les pages régionales:\n  - chauffeur-prive-paris-75.html\n  - chauffeur-prive-93.html\n  - chauffeur-prive-95.html\n  - chauffeur-prive-78.html\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nRefonte navbar + corrections UI mobile\n\n- Nouvelle navbar avec burger CSS animé sur toutes les pages\n- Dropdown avec hover desktop et checkbox mobile\n- Fix overflow horizontal \\(décalage droite\\)\n- Fix formulaire mobile 3 colonnes \\(Bagages/Sieges/Rehausseur\\)\n- Script JS simplifié pour fermer le menu\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix animation burger menu mobile\n\n- Position absolue des spans pour animation fluide\n- Transition du padding pour fermeture smooth\n- Bouton CTA centré avec padding correct\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix animation burger menu mobile\n\n- Position absolue des spans pour animation fluide\n- Transition du padding pour fermeture smooth\n- Bouton CTA centré avec padding correct\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
