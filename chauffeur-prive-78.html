@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -490,7 +490,6 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_next" value="https://chauffeur-prive-paris-idf.fr/">
                 <label for="name">Nom / Prenom</label>
                 <input type="text" id="name" name="nom" required>
 
@@ -589,6 +588,10 @@
 
                 <button type="submit">ENVOYER</button>
             </form>
+            <div class="contact-thanks" style="display:none; padding: 30px 20px; background-color: #e8f5e9; border: 2px solid #2e7d32; border-radius: 8px; text-align: center; margin-top: 20px;">
+                <h3 style="color: #2e7d32; margin: 0 0 10px 0;">Merci pour votre demande !</h3>
+                <p style="margin: 0; color: #1b5e20; font-size: 1.05em;">Nous vous recontactons rapidement.</p>
+            </div>
         </div>
     </main>
     <section class="faq-section">
@@ -672,40 +675,51 @@
         });
     </script>
         <script>
-        async function submitToWebPrime(e) {
-            e.preventDefault();
-            var form = e.target;
-            var btn = form.querySelector('button[type="submit"]');
-            var originalText = btn.textContent;
-
-            // Anti-spam honeypot check
-            var honeypot = form.querySelector('input[name="_honey"]');
-            if (honeypot && honeypot.value) return false;
-
-            btn.textContent = 'Envoi en cours...';
-            btn.disabled = true;
-
-            try {
-                var formData = new FormData(form);
-                var response = await fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (response.ok) {
-                    window.location.href = 'https://chauffeur-prive-paris-idf.fr/';
-                } else {
-                    alert('Erreur lors de l\'envoi. Veuillez reessayer.');
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                }
-            } catch (error) {
-                alert('Erreur de connexion. Veuillez reessayer.');
-                btn.textContent = originalText;
-                btn.disabled = false;
+    function sendBoth(e) {
+        e.preventDefault();
+        var form = e.target;
+        var btn = form.querySelector('button[type="submit"]');
+        var honeyField = form.querySelector('[name="_honey"]');
+        if (honeyField && honeyField.value) return false;
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+        var nom = (form.querySelector('[name="nom"]') || {}).value || '';
+        var tel = (form.querySelector('[name="tel"]') || {}).value || '';
+        var email = (form.querySelector('[name="email"]') || {}).value || '';
+        var services = (form.querySelector('[name="services"]') || {}).value || '';
+        var commentaires = (form.querySelector('[name="commentaires"]') || {}).value || '';
+        var webhookData = new FormData();
+        webhookData.append('name', nom);
+        webhookData.append('email', email);
+        webhookData.append('tel', tel);
+        webhookData.append('service', services);
+        webhookData.append('message', 'Telephone : ' + tel + '\nService demande : ' + services + '\n\n' + commentaires);
+        var p1 = fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
+            method: 'POST',
+            body: webhookData,
+            keepalive: true
+        }).catch(function() {});
+        var p2 = fetch('https://formsubmit.co/ajax/mdvtc@orange.fr', {
+            method: 'POST',
+            body: new FormData(form),
+            keepalive: true,
+            headers: { 'Accept': 'application/json' }
+        }).catch(function() {});
+        var shown = false;
+        var showThanks = function() {
+            if (shown) return;
+            shown = true;
+            form.style.display = 'none';
+            var thanks = form.nextElementSibling;
+            while (thanks && !(thanks.classList && thanks.classList.contains('contact-thanks'))) {
+                thanks = thanks.nextElementSibling;
             }
-            return false;
-        }
+            if (thanks) thanks.style.display = 'block';
+        };
+        Promise.allSettled([p1, p2]).then(showThanks);
+        setTimeout(showThanks, 3000);
+        return false;
+    }
     </script>
 </body>
 
