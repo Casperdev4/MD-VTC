@@ -195,3 +195,32 @@ form{width:85%}
 .faq-item label{font-size:14px;padding:15px}
 .faq-answer p{font-size:14px}
 }
+.bottom-nav{display:none;position:fixed;bottom:10px;left:10px;right:10px;box-sizing:border-box;justify-content:space-around;align-items:center;background:#1a1a1a;border-radius:22px;box-shadow:0 -4px 20px rgba(0,0,0,.5),0 0 30px rgba(0,0,0,.4);z-index:1000;padding:6px 0}
+.bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;min-width:0;padding:4px 1px;text-decoration:none;color:#fff;transition:transform .3s ease}
+.bottom-nav-item:hover,.bottom-nav-item:active{transform:translateY(-2px)}
+.bottom-nav-icon{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-bottom:3px;background:#fff;border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.35);transition:transform .3s ease}
+.bottom-nav-item:hover .bottom-nav-icon{transform:scale(1.08)}
+.bottom-nav-icon svg{width:20px;height:20px;stroke:#135cf3;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bottom-nav-label{font-size:.56rem;font-weight:600;text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.bottom-nav-call .bottom-nav-icon{background:#135cf3}
+.bottom-nav-call .bottom-nav-icon svg{stroke:none;fill:#fff}
+.bottom-nav-whatsapp .bottom-nav-icon{background:#25D366}
+.bottom-nav-whatsapp .bottom-nav-icon svg{stroke:none;fill:#fff}
+@media screen and (max-width:767.98px){
+.bottom-nav{display:flex}
+.whats-icon{display:none}
+#contactez-nous{padding-bottom:100px}
+}
+.form-progress{width:100%;margin:0 0 22px}
+.form-progress-bar{height:6px;background:rgba(255,255,255,.15);border-radius:10px;overflow:hidden}
+.form-progress-bar span{display:block;height:100%;width:33.33%;background:linear-gradient(90deg,#5890ff,#135cf3);border-radius:10px;transition:width .35s ease}
+.form-progress-label{margin-top:8px;font-size:14px;color:#fff;font-weight:600;text-align:center}
+.form-step{width:100%}
+.form-step[hidden]{display:none}
+.form-nav{display:flex;gap:12px;width:100%;margin:8px 0 6%}
+.form-nav button{flex:1;margin:0;padding:13px 20px;font-size:17px;font-weight:600;border:none;border-radius:10px;cursor:pointer;align-items:center;transition:all .3s ease}
+.form-nav .form-prev{display:none;background:transparent;border:1px solid #135cf3;color:#fff}
+.form-nav .form-next{display:none;background:#135cf3;color:#fff}
+.form-nav .form-submit{display:inline-flex;justify-content:center;align-items:center;background:#135cf3;color:#fff}
+.form-nav .form-prev:hover{background:rgba(19,92,243,.15)}
+.form-nav .form-next:hover,.form-nav .form-submit:hover{background:#0d4abf}

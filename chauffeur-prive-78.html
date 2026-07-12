@@ -226,7 +226,7 @@
     <main>
         <div class="img-index">
             <img src="chauffeur-prive-paris.webp" alt="chauffeur prive 78 Yvelines" class="background-image">
-            <h1><i>Chauffeur Prive 78 - Navette aeroport - Transfert aeroport 78</i></h1>
+            <h1><i>Chauffeur Prive 78<br>Navette aeroport<br>Transfert aeroport 78</i></h1>
             <a class="bouton-1" href="tarif-chauffeur-prive.html" title="chauffeur prive 78 Yvelines">RESERVATION</a>
         </div>
         <section>
@@ -482,7 +482,6 @@
                     decoding="async">
             </div>
             <form id="contactForm" action="https://formsubmit.co/mdvtc@orange.fr" method="POST" onsubmit="return sendBoth(event)">
-                <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
                     <input type="text" id="website" name="_honey" autocomplete="off">
@@ -490,103 +489,119 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_subject" value="Formulaire">
-                <label for="name">Nom / Prenom</label>
-                <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Telephone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <div class="form-progress">
+                    <div class="form-progress-bar"><span id="formProgressFill"></span></div>
+                    <div class="form-progress-label">Etape <span id="formStepNum">1</span>/3 &middot; <span id="formStepName">Votre trajet</span></div>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-step" data-name="Votre trajet">
+                    <label for="prestation">Prestation</label>
+                    <select id="prestation" name="prestation">
+                        <option value="Transfert aeroport">Transfert aeroport</option>
+                        <option value="Mise a disposition">Mise a disposition</option>
+                        <option value="Deplacement pro">Deplacement professionnel</option>
+                        <option value="Trajet Prive">Trajet Prive</option>
+                        <option value="Chauffeur Sec">Chauffeur Sec</option>
+                        <option value="Mariage">Mariage</option>
+                        <option value="Tourisme">Tourisme</option>
+                        <option value="Bodyguard">Bodyguard</option>
+                        <option value="Autre">Autre</option>
+                    </select>
 
-                <label for="prestation">Prestation</label>
-                <select id="prestation" name="prestation">
-                    <option value="Transfert aeroport">Transfert aeroport</option>
-                    <option value="MAD">Mise a disposition</option>
-                    <option value="Deplacement pro">Deplacement professionnel</option>
-                    <option value="Trajet Prive">Trajet Prive</option>
-                    <option value="Chauffeur Sec">Chauffeur Sec</option>
-                    <option value="Mariage">Mariage</option>
-                    <option value="Tourisme">Tourisme</option>
-                    <option value="Bodyguard">Bodyguard</option>
-                    <option value="Autre">Autre</option>
-                </select>
+                    <label for="departure1">Depart</label>
+                    <input type="text" id="departure1" name="lieu_depart" required>
 
-                <label for="departure1">Depart</label>
-                <input type="text" id="departure1" name="lieu_depart" required>
+                    <label for="arrival1">Arrivee</label>
+                    <input type="text" id="arrival1" name="lieu_arrivee" required>
 
-                <label for="arrival1">Arrivee</label>
-                <input type="text" id="arrival1" name="lieu_arrivee" required>
+                    <label for="numero">Numero de vol ou train</label>
+                    <input type="text" id="numero" name="numero">
 
-                <label for="numero">Numero de vol ou train</label>
-                <input type="text" id="numero" name="numero">
-
-                <div class="inline-container">
-                    <div class="inline-item">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="inline-item">
-                        <label for="heure">Heure</label>
-                        <input type="time" id="heure" name="heure" required>
+                    <div class="inline-container">
+                        <div class="inline-item">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="inline-item">
+                            <label for="heure">Heure</label>
+                            <input type="time" id="heure" name="heure" required>
+                        </div>
                     </div>
                 </div>
 
-                <div class="inline-container">
-                    <div class="inline-item">
-                        <label for="passengers">Adultes</label>
-                        <select id="passengers" name="passagers">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
+                <div class="form-step" data-name="Passagers &amp; bagages">
+                    <div class="inline-container">
+                        <div class="inline-item">
+                            <label for="passengers">Adultes</label>
+                            <select id="passengers" name="passagers">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="inline-item">
+                            <label for="children">Enfants</label>
+                            <select id="children" name="enfants">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="inline-item">
-                        <label for="children">Enfants</label>
-                        <select id="children" name="enfants">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+
+                    <div class="inline-container">
+                        <div class="inline-item">
+                            <label for="luggage">Bagages</label>
+                            <select id="luggage" name="bagages">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="inline-item">
+                            <label for="car-seats">Sieges auto</label>
+                            <select id="car-seats" name="sieges_auto">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="inline-item">
+                            <label for="rehausseur">Rehausseur</label>
+                            <select id="rehausseur" name="rehausseur">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
-                <div class="inline-container">
-                    <div class="inline-item">
-                        <label for="luggage">Bagages</label>
-                        <select id="luggage" name="bagages">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="inline-item">
-                        <label for="car-seats">Sieges auto</label>
-                        <select id="car-seats" name="sieges_auto">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="inline-item">
-                        <label for="rehausseur">Rehausseur</label>
-                        <select id="rehausseur" name="rehausseur">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
+                <div class="form-step" data-name="Vos coordonnees">
+                    <label for="name">Nom / Prenom</label>
+                    <input type="text" id="name" name="nom" required>
+
+                    <label for="tel">Telephone :</label>
+                    <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="comments">Commentaires</label>
+                    <textarea id="comments" name="commentaires" rows="4"></textarea>
                 </div>
 
-                <label for="comments">Commentaires</label>
-                <textarea id="comments" name="commentaires" rows="4"></textarea>
-
-                <button type="submit">ENVOYER</button>
+                <div class="form-nav">
+                    <button type="button" class="form-prev" id="formPrev">Precedent</button>
+                    <button type="button" class="form-next" id="formNext">Suivant</button>
+                    <button type="submit" class="form-submit" id="formSubmit">ENVOYER</button>
+                </div>
             </form>
             <div class="contact-thanks" style="display:none; padding: 30px 20px; background-color: #e8f5e9; border: 2px solid #2e7d32; border-radius: 8px; text-align: center; margin-top: 20px;">
                 <h3 style="color: #2e7d32; margin: 0 0 10px 0;">Merci pour votre demande !</h3>
@@ -683,17 +698,39 @@
         if (honeyField && honeyField.value) return false;
         btn.textContent = 'Envoi en cours...';
         btn.disabled = true;
-        var nom = (form.querySelector('[name="nom"]') || {}).value || '';
+                var nom = (form.querySelector('[name="nom"]') || {}).value || '';
         var tel = (form.querySelector('[name="tel"]') || {}).value || '';
         var email = (form.querySelector('[name="email"]') || {}).value || '';
-        var services = (form.querySelector('[name="services"]') || {}).value || '';
+        var prestation = (form.querySelector('[name="prestation"]') || {}).value || '';
+        var depart = (form.querySelector('[name="lieu_depart"]') || {}).value || '';
+        var arrivee = (form.querySelector('[name="lieu_arrivee"]') || {}).value || '';
+        var numero = (form.querySelector('[name="numero"]') || {}).value || '';
+        var date = (form.querySelector('[name="date"]') || {}).value || '';
+        var heure = (form.querySelector('[name="heure"]') || {}).value || '';
+        var passagers = (form.querySelector('[name="passagers"]') || {}).value || '';
+        var enfants = (form.querySelector('[name="enfants"]') || {}).value || '';
+        var bagages = (form.querySelector('[name="bagages"]') || {}).value || '';
+        var sieges = (form.querySelector('[name="sieges_auto"]') || {}).value || '';
+        var rehausseur = (form.querySelector('[name="rehausseur"]') || {}).value || '';
         var commentaires = (form.querySelector('[name="commentaires"]') || {}).value || '';
         var webhookData = new FormData();
         webhookData.append('name', nom);
         webhookData.append('email', email);
         webhookData.append('tel', tel);
-        webhookData.append('service', services);
-        webhookData.append('message', 'Telephone : ' + tel + '\nService demande : ' + services + '\n\n' + commentaires);
+        webhookData.append('service', prestation);
+        webhookData.append('depart', depart);
+        webhookData.append('arrivee', arrivee);
+        webhookData.append('date', date);
+        webhookData.append('heure', heure);
+        var msg = 'Prestation : ' + prestation
+            + '\nDepart : ' + depart
+            + '\nArrivee : ' + arrivee
+            + '\nNumero de vol/train : ' + numero
+            + '\nDate : ' + date + ' a ' + heure
+            + '\nPassagers : ' + passagers + ' adulte(s), ' + enfants + ' enfant(s)'
+            + '\nBagages : ' + bagages + ' | Sieges auto : ' + sieges + ' | Rehausseur : ' + rehausseur
+            + '\n\nCommentaires : ' + commentaires;
+        webhookData.append('message', msg);
         var p1 = fetch('https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524', {
             method: 'POST',
             body: webhookData,
@@ -720,6 +757,66 @@
         setTimeout(showThanks, 3000);
         return false;
     }
+    </script>
+    <nav class="bottom-nav">
+        <a href="https://chauffeur-prive-paris-idf.fr/" class="bottom-nav-item" title="Accueil chauffeur prive Paris">
+            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span>
+            <span class="bottom-nav-label">Accueil</span>
+        </a>
+        <a href="chauffeur-prive-paris-75.html" class="bottom-nav-item" title="Nos prestations VTC">
+            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M4 12l1.8-4.5c.3-.6.9-1 1.6-1h9.2c.7 0 1.3.4 1.6 1L20 12v5h-2.5v-2h-11v2H4z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg></span>
+            <span class="bottom-nav-label">Services</span>
+        </a>
+        <a href="tarif-chauffeur-prive.html" class="bottom-nav-item" title="Devis et tarifs chauffeur prive">
+            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span>
+            <span class="bottom-nav-label">Tarifs</span>
+        </a>
+        <a href="tel:+33647851015" class="bottom-nav-item bottom-nav-call" title="Appeler MD VTC">
+            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1z"/></svg></span>
+            <span class="bottom-nav-label">Appeler</span>
+        </a>
+        <a href="https://wa.me/message/5R6MVEKULLH3N1" target="_blank" class="bottom-nav-item bottom-nav-whatsapp" title="Reservation WhatsApp VTC">
+            <span class="bottom-nav-icon"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/></svg></span>
+            <span class="bottom-nav-label">WhatsApp</span>
+        </a>
+    </nav>
+    <script>
+    (function(){
+        var form = document.getElementById('contactForm');
+        if(!form) return;
+        var steps = [].slice.call(form.querySelectorAll('.form-step'));
+        if(steps.length < 2) return;
+        var prev = form.querySelector('#formPrev'),
+            next = form.querySelector('#formNext'),
+            submit = form.querySelector('#formSubmit'),
+            fill = form.querySelector('#formProgressFill'),
+            snum = form.querySelector('#formStepNum'),
+            sname = form.querySelector('#formStepName');
+        var cur = 0;
+        function show(i){
+            cur = i;
+            steps.forEach(function(s, idx){
+                if(idx === i){ s.removeAttribute('hidden'); }
+                else { s.setAttribute('hidden',''); }
+            });
+            if(prev) prev.style.display = i === 0 ? 'none' : 'inline-flex';
+            if(next) next.style.display = i === steps.length - 1 ? 'none' : 'inline-flex';
+            if(submit) submit.style.display = i === steps.length - 1 ? 'inline-flex' : 'none';
+            if(fill) fill.style.width = ((i + 1) / steps.length * 100) + '%';
+            if(snum) snum.textContent = i + 1;
+            if(sname) sname.textContent = steps[i].getAttribute('data-name');
+        }
+        function valid(i){
+            var f = steps[i].querySelectorAll('input, select, textarea');
+            for(var j = 0; j < f.length; j++){
+                if(!f[j].checkValidity()){ f[j].reportValidity(); return false; }
+            }
+            return true;
+        }
+        if(next) next.addEventListener('click', function(){ if(valid(cur)) show(Math.min(cur + 1, steps.length - 1)); });
+        if(prev) prev.addEventListener('click', function(){ show(Math.max(cur - 1, 0)); });
+        show(0);
+    })();
     </script>
 </body>
 
